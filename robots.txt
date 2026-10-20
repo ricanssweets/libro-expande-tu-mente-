@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ricanssweets.github.io/libro-expande-tu-mente-/sitemap.xml

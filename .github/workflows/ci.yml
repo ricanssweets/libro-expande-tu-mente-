@@ -1,0 +1,55 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verificar:
+    name: Artefactos sincronizados y pruebas
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      # app.js, contenido.html y sitemap.xml se versionan ya generados.
+      # Si alguien edita src/ y olvida reconstruir, este paso falla y lo señala.
+      - name: Regenerar artefactos
+        run: npm run build && npm run static
+
+      - name: Comprobar que los artefactos están sincronizados con el código fuente
+        run: |
+          if ! git diff --exit-code -- app.js contenido.html sitemap.xml; then
+            echo ""
+            echo "::error::Los artefactos generados no coinciden con src/. Ejecuta 'npm run release' y commitea el resultado."
+            exit 1
+          fi
+
+      - name: Pruebas del sitio
+        run: npm test
+
+      # Se ejecuta siempre, aunque los pasos anteriores fallen, para dejar rastro.
+      - name: Resumen
+        if: always()
+        run: |
+          {
+            echo "### Expande Tu Mente — CI"
+            echo ""
+            echo "| Artefacto | Bytes |"
+            echo "|---|---|"
+            for f in app.js contenido.html sitemap.xml; do
+              if [ -f "$f" ]; then echo "| \`$f\` | $(wc -c < "$f" | tr -d ' ') |"; fi
+            done
+          } >> "$GITHUB_STEP_SUMMARY"

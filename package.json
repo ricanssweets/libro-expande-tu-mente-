@@ -1,0 +1,19 @@
+{
+  "name": "libro-expande-tu-mente",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Expande Tu Mente — libro interactivo (PWA) sobre aprendizaje y memoria",
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "static": "node tools/gen-static.mjs && node tools/gen-sitemap.mjs",
+    "test": "node tools/smoke-test.mjs",
+    "release": "npm run build && npm run static && npm test"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "jsdom": "^25.0.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}

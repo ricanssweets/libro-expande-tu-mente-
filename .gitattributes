@@ -1,0 +1,4 @@
+# Normaliza los finales de línea para que el contenido generado no cambie entre sistemas.
+* text=auto eol=lf
+*.png binary
+*.ico binary

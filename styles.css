@@ -1,0 +1,61 @@
+/* Estilos base y respaldo. La interfaz la define React con estilos en línea;
+   este archivo evita el destello blanco al cargar y da forma al contenido sin JavaScript. */
+
+:root { color-scheme: light dark; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: #F5EEDC;
+  color: #211A10;
+}
+
+@media (prefers-color-scheme: dark) {
+  html, body { background: #1B1712; color: #F1E9D8; }
+}
+
+#root { min-height: 100vh; }
+
+*, *::before, *::after { box-sizing: border-box; }
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #4a4030; border-radius: 4px; }
+
+/* Enlace de salto: se hace visible al recibir foco por teclado. */
+a[href="#contenido"]:focus-visible {
+  outline: 2px solid #B9760F;
+  outline-offset: 2px;
+}
+
+img, svg { max-width: 100%; }
+
+/* Contenido de respaldo (sin JavaScript) y página estática. */
+.fallback {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 48px 24px 64px 24px;
+  font-family: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, 'Times New Roman', serif;
+  line-height: 1.7;
+}
+
+.fallback h1 { font-size: 2rem; line-height: 1.1; margin: 0 0 .3em 0; }
+.fallback h2 { font-size: 1.3rem; margin: 0 0 .4em 0; }
+.fallback .lead { font-style: italic; opacity: .75; margin-top: 0; }
+.fallback a { color: #B9760F; }
+
+/* Página estática de contenido (contenido.html). */
+.static-page { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px 24px; line-height: 1.75; }
+.static-page h1 { font-size: 2rem; }
+.static-page h2 { margin-top: 2.4em; font-size: 1.35rem; border-top: 1px solid rgba(128,128,128,.35); padding-top: 1.2em; }
+.static-page h3 { margin-top: 1.6em; font-size: 1.08rem; color: #B9760F; }
+.static-page .tag { text-transform: uppercase; letter-spacing: .14em; font-size: .72rem; color: #B9760F; font-family: system-ui, sans-serif; font-weight: 700; }
+.static-page .sub { font-style: italic; opacity: .8; }
+.static-page blockquote { margin: 1.2em 0; padding: .1em 1.1em; border-left: 3px solid #B9760F; font-style: italic; }
+.static-page .keyidea { background: #211A10; color: #F5EEDC; padding: 16px 20px; border-radius: 10px; margin: 1.4em 0; }
+.static-page .exercise { border: 1.5px dashed #B9760F; border-radius: 10px; padding: 16px 20px; margin: 1.4em 0; }
+.static-page nav.toc ol { padding-left: 1.2em; }
+.static-page nav.toc a { color: #B9760F; text-decoration: none; }
+.static-page nav.toc a:hover { text-decoration: underline; }
+.static-page .back { display: inline-block; margin-top: 2em; }
+.static-page footer { margin-top: 3em; border-top: 1px solid rgba(128,128,128,.35); padding-top: 1em; font-family: system-ui, sans-serif; font-size: .8rem; opacity: .75; }
