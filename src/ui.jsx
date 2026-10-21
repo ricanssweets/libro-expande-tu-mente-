@@ -113,6 +113,9 @@ export function Sidebar({
         <button onClick={() => { setView("home"); closeSidebar(); }} style={{ ...navRowStyle(T, view === "home"), marginBottom: 6 }}>
           <Icon path={ICONS.home} size={13} /> <span style={{ marginLeft: 8 }}>Portada</span>
         </button>
+        <button onClick={() => { setView("train"); closeSidebar(); }} style={{ ...navRowStyle(T, view === "train"), marginBottom: 6 }}>
+          <Icon path={ICONS.zap} size={13} color={T.gold} /> <span style={{ marginLeft: 8 }}>Entrenar — tests y flashcards</span>
+        </button>
 
         {bookmarkList.length > 0 && (
           <div style={{ marginBottom: 10 }}>
@@ -159,7 +162,7 @@ export function Sidebar({
 
 /* ---------------------------------------------------------------- Header */
 
-export function Header({ T, isDesktop, openSidebar, view, chapter, bookmarks, onToggleBookmark, fontKey, onShiftFont, themeName, onToggleTheme, toast }) {
+export function Header({ T, isDesktop, openSidebar, view, chapter, bookmarks, onToggleBookmark, fontKey, onShiftFont, themeName, onToggleTheme, toast, onTrain }) {
   const label = chapter.num ? `Capítulo ${chapter.num}` : chapter.tag === "Apéndice" ? "Apéndice" : "Introducción";
   return (
     <header style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "10px 16px", borderBottom: `1px solid ${T.line}`, gap: 10, flexShrink: 0 }}>
@@ -174,9 +177,27 @@ export function Header({ T, isDesktop, openSidebar, view, chapter, bookmarks, on
             {label} · {chapter.title}
           </div>
         )}
+        {view === "train" && (
+          <div style={{ fontFamily: SANS, fontSize: 11, color: T.inkSoft, whiteSpace: "nowrap" }}>
+            Entrenamiento
+          </div>
+        )}
       </div>
 
       <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+        {view !== "train" && onTrain && (
+          <button
+            onClick={onTrain}
+            style={{
+              display: "flex", alignItems: "center", gap: 6, padding: "7px 12px", borderRadius: 18,
+              border: `1.5px solid ${T.gold}`, background: "transparent", color: T.ink,
+              fontFamily: SANS, fontSize: 12, fontWeight: 800, cursor: "pointer", marginRight: 2
+            }}
+            title="Tests de memoria y flashcards con repetición espaciada"
+          >
+            <Icon path={ICONS.zap} size={13} color={T.gold} /> Entrenar
+          </button>
+        )}
         {view === "reader" && (
           <button
             onClick={onToggleBookmark}
@@ -239,7 +260,7 @@ export function Footer({ T, chapterIdx, total, goToChapter, chapter, readPct }) 
 
 /* ---------------------------------------------------------------- Home */
 
-export function HomeView({ T, onStart, onChapter, chapterIdx, total, progressPct, readCount, chapters }) {
+export function HomeView({ T, onStart, onChapter, onTrain, chapterIdx, total, progressPct, readCount, chapters }) {
   const CTA = {
     marginTop: 26, background: T.gold, color: "#1B1712", border: "none", borderRadius: 10, padding: "13px 22px",
     fontFamily: SANS, fontWeight: 800, fontSize: 13.5, cursor: "pointer", display: "flex", alignItems: "center", gap: 8
@@ -256,7 +277,7 @@ export function HomeView({ T, onStart, onChapter, chapterIdx, total, progressPct
         Aprende como realmente aprende tu cerebro.
       </p>
       <p style={{ fontFamily: SANS, fontSize: 12.5, color: T.inkSoft, marginTop: 10, lineHeight: 1.6 }}>
-        27 capítulos y 2 apéndices con ejercicios prácticos y respaldo científico. Tu progreso y tus marcadores se guardan en este dispositivo.
+        27 capítulos y 2 apéndices con ejercicios prácticos, respaldo científico, un quiz por capítulo, tests de memoria y flashcards con repetición espaciada. Tu progreso y tus marcadores se guardan en este dispositivo.
       </p>
 
       <button onClick={onStart} style={CTA}>
@@ -266,6 +287,28 @@ export function HomeView({ T, onStart, onChapter, chapterIdx, total, progressPct
       {readCount > 0 && (
         <div style={{ marginTop: 14, fontFamily: SANS, fontSize: 12, color: T.inkSoft }}>
           Progreso: {progressPct}% · {readCount} de {total} capítulos leídos
+        </div>
+      )}
+
+      {onTrain && (
+        <div style={{ marginTop: 30, border: `1.5px solid ${T.gold}`, borderRadius: 12, padding: "18px 20px", background: T.bg2 + "55" }}>
+          <h2 style={{ fontFamily: SANS, fontWeight: 800, fontSize: 12, letterSpacing: "0.1em", textTransform: "uppercase", color: T.gold, margin: "0 0 6px 0" }}>
+            Nuevo en la v4 — entrena, no solo leas
+          </h2>
+          <p style={{ fontFamily: SANS, fontSize: 13, color: T.inkSoft, lineHeight: 1.6, margin: "0 0 14px 0" }}>
+            Cada capítulo cierra con un quiz de 3 preguntas. Y aquí puedes medir tu memoria y repasar con espaciado, como manda la ciencia del libro:
+          </p>
+          <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
+            <button onClick={() => onTrain("tests")} style={{ ...CTA, marginTop: 0, padding: "11px 16px", fontSize: 12.5 }}>
+              Tests de memoria
+            </button>
+            <button onClick={() => onTrain("cards")} style={{
+              background: "transparent", color: T.ink, border: `1.5px solid ${T.line}`, borderRadius: 10, padding: "11px 16px",
+              fontFamily: SANS, fontWeight: 800, fontSize: 12.5, cursor: "pointer"
+            }}>
+              Flashcards SRS
+            </button>
+          </div>
         </div>
       )}
 
