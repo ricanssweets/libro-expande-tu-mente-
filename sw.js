@@ -5,7 +5,7 @@
  *   - resto de activos: caché primero + revalidación en segundo plano.
  * Al cambiar archivos o el bundle, subir VERSION para que los lectores reciban la nueva.
  */
-const VERSION = 'v3.0.0';
+const VERSION = 'v4.0.0';
 const CACHE = 'expande-mente-' + VERSION;
 
 const PRECACHE = [

@@ -3,6 +3,7 @@ import { BOOK } from "./book-data.js";
 export { BOOK };
 import { THEMES, FONT_ORDER, FONT_SIZES, SERIF, SANS, normalizeText, chapterSearchText } from "./theme.js";
 import ReaderView from "./ReaderView.jsx";
+import TrainView from "./TrainView.jsx";
 import { Sidebar, Header, Footer, HomeView } from "./ui.jsx";
 
 /* ------------------------------------------------ almacenamiento seguro */
@@ -66,7 +67,8 @@ export default function App({ initialView, initialChapter } = {}) {
     if (prog && Number.isInteger(prog.chapterIdx) && prog.chapterIdx >= 0 && prog.chapterIdx < BOOK.length) return prog.chapterIdx;
     return 0;
   });
-  const [view, setView] = useState(initialView === "reader" ? "reader" : "home");
+  const [view, setView] = useState(initialView === "reader" ? "reader" : initialView === "train" ? "train" : "home");
+  const [trainTab, setTrainTab] = useState("tests");
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [bookmarks, setBookmarks] = useState(() => {
     const bm = readLocal(LS.bookmarks, []);
@@ -267,6 +269,7 @@ export default function App({ initialView, initialChapter } = {}) {
         <Header
           T={T} isDesktop={isDesktop} openSidebar={() => setSidebarOpen(true)}
           view={view} chapter={chapter} bookmarks={bookmarks}
+          onTrain={() => { setTrainTab("tests"); setView("train"); }}
           onToggleBookmark={() => toggleBookmark(chapter.id)}
           fontKey={fontKey} onShiftFont={shiftFont}
           themeName={themeName} onToggleTheme={() => setThemeName((t) => (t === "light" ? "dark" : "light"))}
@@ -276,7 +279,7 @@ export default function App({ initialView, initialChapter } = {}) {
         <main
           id="contenido"
           ref={contentRef}
-          onScroll={onScroll}
+          onScroll={view === "reader" ? onScroll : undefined}
           tabIndex={-1}
           style={{ flex: 1, overflowY: "auto", WebkitOverflowScrolling: "touch" }}
         >
@@ -285,13 +288,16 @@ export default function App({ initialView, initialChapter } = {}) {
               T={T} chapters={CHAPTERS}
               onStart={() => goToChapter(chapterIdx)}
               onChapter={goToChapter}
+              onTrain={(tab) => { setTrainTab(tab); setView("train"); }}
               chapterIdx={chapterIdx} total={BOOK.length}
               progressPct={progressPct} readCount={readCount}
             />
-            : <ReaderView
-              chapter={chapter} T={T} fontSize={FONT_SIZES[fontKey]}
-              onCopyIdea={copyIdea} copied={copied}
-            />}
+            : view === "train"
+              ? <TrainView T={T} initialTab={trainTab} />
+              : <ReaderView
+                chapter={chapter} T={T} fontSize={FONT_SIZES[fontKey]}
+                onCopyIdea={copyIdea} copied={copied}
+              />}
         </main>
 
         {view === "reader" && (

@@ -125,6 +125,32 @@ check("SSR: marcador de capítulo accesible",
   /aria-label="Guardar marcador"/.test(readerHtml) && /aria-label="Capítulo anterior"/.test(readerHtml) && /aria-label="Capítulo siguiente"/.test(readerHtml));
 check("SSR: la idea clave se puede copiar", /aria-label="Copiar la idea clave"/.test(readerHtml));
 check("SSR: el contenido del capítulo está en el HTML", /running|recuperar|memoria/i.test(readerHtml) && readerHtml.length > 4000, `${readerHtml.length} bytes`);
+check("SSR: el capítulo renderiza su quiz (v4)", /Quiz — practica recuperar/.test(readerHtml) && /Elige una respuesta en cada pregunta/.test(readerHtml));
+
+/* datos interactivos de la v4: quizzes por capítulo y mazo SRS */
+const { QUIZ } = await import(new URL("../src/quiz-data.js", import.meta.url));
+const { CARDS } = await import(new URL("../src/cards-data.js", import.meta.url));
+const quizIds = Object.keys(QUIZ);
+const quizOk = quizIds.length === 27 && quizIds.every((id) =>
+  Array.isArray(QUIZ[id]) && QUIZ[id].length === 3 && QUIZ[id].every((q) =>
+    typeof q.q === "string" && typeof q.why === "string" &&
+    Array.isArray(q.options) && q.options.length === 4 && new Set(q.options).size === 4 &&
+    Number.isInteger(q.answer) && q.answer >= 0 && q.answer <= 3));
+check("quiz-data: 27 capítulos x 3 preguntas válidas (81)", quizOk, `${quizIds.length} capítulos`);
+check("cards-data: mazo SRS de al menos 45 tarjetas completas",
+  Array.isArray(CARDS) && CARDS.length >= 45 && CARDS.every((c) => c.f && c.b && c.t), `${CARDS.length} tarjetas`);
+
+/* la vista Entrenar también debe renderizar (tests + flashcards) */
+let trainHtml = "";
+let trainError = null;
+try {
+  trainHtml = renderToStaticMarkup(React.createElement(App, { initialView: "train" }));
+} catch (err) {
+  trainError = err;
+}
+check("SSR: la vista Entrenar renderiza (v4)",
+  !trainError && /Practica lo que el libro predica/.test(trainHtml) && /Span de dígitos/.test(trainHtml) && /Recuerdo de una lista/.test(trainHtml),
+  trainError ? String(trainError.message) : "");
 
 /* ---------------------------------------------------- 3. bundle real en jsdom */
 

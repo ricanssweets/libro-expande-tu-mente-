@@ -1,4 +1,5 @@
 import { SERIF, SANS, keyIdea } from "./theme.js";
+import QuizBlock from "./QuizBlock.jsx";
 
 /* Vista de lectura de un capítulo. Refina el diseño original manteniendo el contenido intacto. */
 export default function ReaderView({ chapter: c, T, fontSize, onCopyIdea, copied }) {
@@ -91,6 +92,8 @@ export default function ReaderView({ chapter: c, T, fontSize, onCopyIdea, copied
           </footer>
         )}
       </div>
+
+      <QuizBlock key={c.id} chapterId={c.id} T={T} fontSize={fontSize} />
     </article>
   );
 }

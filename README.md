@@ -69,6 +69,11 @@ fecha en los archivos generados.
   `contenido.html`, que contiene el libro entero como HTML.
 - **Progreso honesto.** Un capítulo cuenta como leído al superar el 85% de su scroll; el
   progreso y los marcadores se guardan en `localStorage` con manejo de errores.
+- **Entrenamiento interactivo (v4).** Cada capítulo cierra con un quiz de 3 preguntas con
+  explicación citada (`src/quiz-data.js`). La vista «Entrenar» incluye dos tests de memoria
+  (span de dígitos y recuerdo de una lista de 15 palabras) con historial, y un mazo de 52
+  flashcards con repetición espaciada tipo SM-2 (`src/cards-data.js`): las tarjetas vencidas
+  y el historial viven en `localStorage`, sin cuentas ni servidor.
 
 ## Publicación
 
