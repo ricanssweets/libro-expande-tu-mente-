@@ -13,7 +13,7 @@ const esc = (s) => String(s ?? "")
   .replace(/"/g, "&quot;");
 
 const slug = (c) => c.id;
-const label = (c) => (c.num ? `Capítulo ${c.num}` : "Introducción");
+const label = (c) => (c.num ? `Capítulo ${c.num}` : c.tag === "Apéndice" ? "Apéndice" : "Introducción");
 
 const paragraphs = (arr) => (arr || []).map((p) => `      <p>${esc(p)}</p>`).join("\n");
 
@@ -61,14 +61,14 @@ const html = `<!doctype html>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <title>Expande Tu Mente — el libro completo (texto)</title>
-<meta name="description" content="Texto completo de Expande Tu Mente: 15 capítulos sobre cómo aprende el cerebro, con un ejercicio práctico por capítulo."/>
+<meta name="description" content="Texto completo de Expande Tu Mente: 27 capítulos y 2 apéndices sobre cómo aprende el cerebro, con respaldo científico y un ejercicio práctico por capítulo."/>
 <meta name="robots" content="index, follow"/>
 <link rel="canonical" href="${SITE}contenido.html"/>
 <meta name="theme-color" content="#F5EEDC"/>
 <meta name="color-scheme" content="light dark"/>
 <meta property="og:type" content="book"/>
 <meta property="og:title" content="Expande Tu Mente — el libro completo"/>
-<meta property="og:description" content="15 capítulos sobre aprendizaje y memoria, en texto."/>
+<meta property="og:description" content="27 capítulos sobre aprendizaje y memoria, con respaldo científico, en texto."/>
 <meta property="og:url" content="${SITE}contenido.html"/>
 <meta property="og:image" content="${SITE}icon-512.png"/>
 <link rel="manifest" href="manifest.json"/>

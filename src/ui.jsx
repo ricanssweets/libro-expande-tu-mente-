@@ -160,7 +160,7 @@ export function Sidebar({
 /* ---------------------------------------------------------------- Header */
 
 export function Header({ T, isDesktop, openSidebar, view, chapter, bookmarks, onToggleBookmark, fontKey, onShiftFont, themeName, onToggleTheme, toast }) {
-  const label = chapter.num ? `Capítulo ${chapter.num}` : "Introducción";
+  const label = chapter.num ? `Capítulo ${chapter.num}` : chapter.tag === "Apéndice" ? "Apéndice" : "Introducción";
   return (
     <header style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "10px 16px", borderBottom: `1px solid ${T.line}`, gap: 10, flexShrink: 0 }}>
       <div style={{ display: "flex", alignItems: "center", gap: 10, minWidth: 0 }}>
@@ -256,7 +256,7 @@ export function HomeView({ T, onStart, onChapter, chapterIdx, total, progressPct
         Aprende como realmente aprende tu cerebro.
       </p>
       <p style={{ fontFamily: SANS, fontSize: 12.5, color: T.inkSoft, marginTop: 10, lineHeight: 1.6 }}>
-        {total} capítulos con ejercicios prácticos. Tu progreso y tus marcadores se guardan en este dispositivo.
+        27 capítulos y 2 apéndices con ejercicios prácticos y respaldo científico. Tu progreso y tus marcadores se guardan en este dispositivo.
       </p>
 
       <button onClick={onStart} style={CTA}>

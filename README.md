@@ -1,7 +1,11 @@
 # Expande Tu Mente
 
-Libro interactivo (PWA) sobre aprendizaje y memoria: 15 capítulos con un ejercicio práctico
-en cada uno. Se puede leer online, instalar en el teléfono y usar sin conexión.
+Libro interactivo (PWA) sobre aprendizaje y memoria. **Edición expandida v3:** 27 capítulos y 2
+apéndices (protocolos rápidos y bibliografía verificada con DOI), con una sección
+«La ciencia, con números» en cada capítulo original y capítulos nuevos sobre memoria de
+trabajo, plasticidad, codificación, contexto, ejercicio, nutrición, estrés, mitos, falsos
+recuerdos, suplementos y protección cognitiva a largo plazo. Un ejercicio práctico en cada
+capítulo. Se puede leer online, instalar en el teléfono y usar sin conexión.
 
 **Sitio publicado:** https://ricanssweets.github.io/libro-expande-tu-mente-/
 
@@ -37,9 +41,9 @@ Tras cualquier cambio de contenido o de código hay que:
 2. **Subir `VERSION` en `sw.js`** para que los lectores que ya tienen la app reciban la nueva caché.
 3. Commitear también los artefactos generados (`app.js`, `contenido.html`, `sitemap.xml`).
 
-Los datos del libro viven en `src/book-data.js` y se extraen del original con
-`node tools/extract.mjs legacy/index.v1.html src/book-data.js`. Para editar el texto,
-edita `src/book-data.js` y vuelve a compilar.
+Los datos del libro viven en `src/book-data.js`. La v3 se ensambló a partir del texto de la
+v2 (capítulos originales conservados, renumerados en orden de lectura) más capítulos nuevos
+con citas verificadas. Para editar el texto, edita `src/book-data.js` y vuelve a compilar.
 
 ### Integración continua
 
