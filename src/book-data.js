@@ -18,7 +18,7 @@ export const BOOK = [
       {
         h: "Qué cambia en esta edición expandida",
         p: [
-          "Esta es la tercera edición de Expande Tu Mente. La primera era un ensayo breve; la segunda lo convirtió en una aplicación de lectura. Esta edición hace lo que ninguna de las anteriores: muestra las pruebas. El libro crece de 15 a 27 capítulos, añade la neurociencia que faltaba (memoria de trabajo, plasticidad, codificación), capítulos completos sobre ejercicio, nutrición, estrés, mitos, falsos recuerdos y suplementos sin humo, y cierra con protocolos paso a paso y una bibliografía verificada con DOI para que puedas comprobar cada número.",
+          "Esta es la tercera edición de Expande Tu Mente. La primera era un ensayo breve; la segunda lo convirtió en una aplicación de lectura. Esta edición hace lo que ninguna de las anteriores: muestra las pruebas. El libro crece de 15 a 27 capítulos, añade la neurociencia que faltaba (memoria de trabajo, plasticidad, codificación) y capítulos completos sobre ejercicio, nutrición, estrés, mitos, falsos recuerdos y suplementos sin humo, y cierra con protocolos paso a paso y una bibliografía verificada con DOI para que puedas comprobar cada número.",
           "Un aviso de honestidad que recorre todo el libro: la ciencia de la memoria es fuerte en unas cosas (recuperación, espaciado, sueño) y débil o nula en otras que se venden mucho (entrenadores cerebrales, la mayoría de nootrópicos). Aquí encontrarás ambas, etiquetadas. Expande tu mente empieza por saber qué no funciona."
         ]
       },
@@ -98,7 +98,7 @@ export const BOOK = [
     subtitle: "Fue diseñado para olvidar... y esa es precisamente su mayor fortaleza",
     hook: "Olvidar no es un error del cerebro. Es una de sus funciones más inteligentes.",
     paragraphs: [
-      "Imagina que mañana despiertas con la capacidad de recordar absolutamente todo: cada conversación, cada rostro, cada contraseña, cada momento vergonzoso. Al principio parecería un superpoder. Después de unos días sería una pesadilla: no podrías concentrarte, tu mente estaría inundada de recuerdos irrelevantes. Personas con Hipertimesia —una condición real y extremadamente rara— recuerdan casi todos los días de su vida con detalle, y muchas la describen como una carga emocional difícil de manejar."
+      "Imagina que mañana despiertas con la capacidad de recordar absolutamente todo: cada conversación, cada rostro, cada contraseña, cada momento vergonzoso. Al principio parecería un superpoder. Después de unos días sería una pesadilla: no podrías concentrarte, tu mente estaría inundada de recuerdos irrelevantes. Personas con hipertimesia —una condición real y extremadamente rara— recuerdan casi todos los días de su vida con detalle, y muchas la describen como una carga emocional difícil de manejar."
     ],
     sections: [
       {
@@ -222,7 +222,7 @@ export const BOOK = [
       {
         h: "La ciencia, con números",
         p: [
-          "La regla que resume la plasticidad la formuló Hebb (1949): las neuronas que se activan juntas tienden a reforzar su conexión. La frase popular en inglés que la resume es una paráfrasis posterior, no una cita literal suya, y conviene decirlo para no inventar autoridad. La demostración experimental clásica llegó con Bliss y Lømo (1973): tras una estimulación de alta frecuencia en el hipocampo de conejos, la eficacia de la sinapsis aumentaba de forma durable, durante horas y días. A ese fortalecimiento se le llama potenciación a largo plazo o LTP, depende en esas vías de receptores NMDA y de la entrada de calcio, y se acompaña de la inserción de más receptores AMPA en la sinapsis reforzada.",
+          "La regla que resume la plasticidad la formuló Hebb (1949): las neuronas que se activan juntas tienden a reforzar su conexión. La frase popular en inglés que la resume es una paráfrasis posterior, no una cita literal suya, y conviene decirlo para no inventar autoridad. La demostración experimental clásica llegó con Bliss y Lømo (1973): tras una estimulación de alta frecuencia en el hipocampo de conejos, la eficacia de la sinapsis aumentaba de forma durable, durante horas y días. A ese fortalecimiento se le llama potenciación a largo plazo o LTP; depende en esas vías de receptores NMDA y de la entrada de calcio, y se acompaña de la inserción de más receptores AMPA en la sinapsis reforzada.",
           "Después viene la consolidación. McGaugh (2000) resumió un siglo de evidencia: en las horas siguientes al aprendizaje, una consolidación sináptica que requiere síntesis de proteínas hace la traza resistente; bloquear ese proceso tras aprender borra el recuerdo en animales. La fuerza de esta cadena es desigual y el libro la etiqueta sin disimulo: la LTP y la consolidación están demostradas con fuerza en animales, mientras que su traducción directa a humanos es indirecta, apoyada en farmacología, lesiones y neuroimagen, no en medir sinapsis humanas mientras estudias. Aun así, la dirección práctica es clara: lo que haces en las horas posteriores a aprender —dormir, no saturar, recuperar— forma parte del aprendizaje, no es un descanso ajeno a él."
         ]
       },
@@ -239,7 +239,7 @@ export const BOOK = [
       items: [
         "Elige algo que quieras aprender esta semana y clasifícalo por escrito: ¿es un hecho, un episodio que quieres recordar o una habilidad que debes ejecutar?",
         "Si es una habilidad, agenda práctica real con retroalimentación en vez de otra hora de lectura; la lectura solo prepara la fase declarativa inicial.",
-        "Si es un hecho, planifica qué harás en las horas siguientes a estudiarlo: proteger el sueño y evitar saturar con material parecido compite menos con la consolidación.",
+        "Si es un hecho, planifica qué harás en las horas siguientes a estudiarlo: proteger el sueño y evitar saturar con material parecido compiten menos con la consolidación.",
         "Recupera el recuerdo una vez, de memoria, y anota qué cambió al recuperarlo: esa actualización es parte normal del proceso, no un fallo.",
         "Marca con una cruz cualquier promesa que escuches sobre borrar recuerdos o crear neuronas nuevas sin protocolo ni evidencia: ya sabes qué cautelas exigir."
       ]
@@ -277,7 +277,7 @@ export const BOOK = [
       {
         h: "La ciencia, con números",
         p: [
-          "Tu teléfono te cobra aunque no lo toques. Ward y colaboradores (2017, Journal of the Association for Consumer Research, n ≈ 800) compararon tener el teléfono en otra habitación, en el bolso o sobre la mesa, boca abajo y en silencio: la condición de otra habitación rindió mejor en memoria de trabajo e inteligencia fluida. Metaanálisis posteriores encuentran el efecto menor e inconsistente, pero la recomendación cuesta cero: fuera de la habitación.",
+          "Tu teléfono te cobra aunque no lo toques. Ward y colaboradores (2017, Journal of the Association for Consumer Research; experimento 1: n = 520, unos 800 participantes sumando los dos experimentos) compararon tener el teléfono en otra habitación, en el bolso o sobre la mesa, boca abajo y en silencio: la condición de otra habitación rindió mejor en memoria de trabajo e inteligencia fluida. Metaanálisis posteriores encuentran el efecto menor e inconsistente, pero la recomendación cuesta cero: fuera de la habitación.",
           "Tampoco existe la multitarea atencional: hay cambio rápido entre tareas, y cada cambio cobra un coste de tiempo y errores (Rubinstein, Meyer & Evans, 2001; Monsell, 2003). Y basta oír una notificación para rendir como si hubieras usado el teléfono, según un estudio único de Stothart y colaboradores (2015) que conviene tomar como señal, no como ley. El bloque de atención profunda del ejercicio es, literalmente, la aplicación de estos tres datos."
         ]
       }
@@ -333,7 +333,7 @@ export const BOOK = [
         h: "La cautela que manda: codifica como te van a evaluar",
         p: [
           "Aquí viene el freno que separa este libro de los eslóganes. La teoría de los niveles recibió una crítica clásica de Baddeley (1978): es en parte circular, porque no tenemos una medida independiente de la profundidad fuera del propio recuerdo que queremos explicar. Dicho en práctico, profundo no es una etiqueta que puedas pegar a cualquier actividad con buena conciencia; hay que comprobarlo con recuperación real, no con sensaciones de comprensión.",
-          "Y hay una segunda cautela, aún más operativa: el procesamiento apropiado a la transferencia, demostrado por Morris, Bransford y Franks (1977). Si la prueba final es de rimas, codificar rimas supera a codificar significado; si la prueba pide aplicar, codificar solo definiciones se queda corto. La moraleja no es que dar igual cómo estudies, es que debes codificar en el formato en que serás evaluado: si te van a pedir resolver problemas, elabora resolviendo problemas; si te van a pedir explicar en voz alta, elabora explicando en voz alta; si te van a pedir recordar de memoria, genera y recupera de memoria desde el principio. Profundo, sí, pero profundo en la dirección de la prueba."
+          "Y hay una segunda cautela, aún más operativa: el procesamiento apropiado a la transferencia, demostrado por Morris, Bransford y Franks (1977). Si la prueba final es de rimas, codificar rimas supera a codificar significado; si la prueba pide aplicar, codificar solo definiciones se queda corto. La moraleja no es que da igual cómo estudies, es que debes codificar en el formato en que serás evaluado: si te van a pedir resolver problemas, elabora resolviendo problemas; si te van a pedir explicar en voz alta, elabora explicando en voz alta; si te van a pedir recordar de memoria, genera y recupera de memoria desde el principio. Profundo, sí, pero profundo en la dirección de la prueba."
         ]
       }
     ],
@@ -418,7 +418,7 @@ export const BOOK = [
       {
         h: "La ciencia, con números",
         p: [
-          "Cepeda y colaboradores (2006, Psychological Bulletin) sintetizaron 254 estudios con más de 14,000 participantes: la práctica espaciada retuvo un 47% frente a un 37% de la práctica concentrada en el mismo tiempo total. Y Cepeda y colaboradores (2008, Psychological Science, más de 1,350 participantes) añadieron la regla práctica que usa todo este libro: el intervalo óptimo entre repasos crece con el plazo hasta el examen y ronda el 10–20% de ese plazo. Para retener un mes, repasa cada 3–6 días; para un año, cada 1–2 meses.",
+          "Cepeda y colaboradores (2006, Psychological Bulletin) sintetizaron 839 evaluaciones de 317 experimentos: con el mismo tiempo total de práctica, espaciar las sesiones retuvo claramente más que concentrarlas, y la ventaja se repitió en todos los plazos estudiados. Y Cepeda y colaboradores (2008, Psychological Science, más de 1,350 participantes) añadieron la regla práctica que usa todo este libro: el intervalo óptimo entre repasos crece con el plazo hasta el examen; como guía práctica ronda el 10–20% de ese plazo en plazos cortos y medios, y la proporción óptima se acorta cuando el plazo es muy largo (de ~20–40% a una semana a ~5–10% a un año). Para retener un mes, repasa cada 3–6 días; para un año, cada 1–2 meses.",
           "Una honestidad sobre el origen: la curva del olvido de Ebbinghaus (1885) se midió con un solo sujeto — él mismo — memorizando sílabas sin sentido. Es una ilustración del fenómeno, no tu curva personal. Lo que sí es general es la forma: la caída es rápida al principio y se aplana, y cada recuperación espaciada la vuelve más lenta."
         ]
       }
@@ -462,7 +462,7 @@ export const BOOK = [
         h: "La ciencia, con números",
         p: [
           "Para leer los números que siguen, usa esta escala que recorre todo el libro: un tamaño de efecto de 0,20 es pequeño, 0,50 es mediano y 0,80 es grande. Ahora mira el verde. El metaanálisis de Adesope et al. (2017) encontró que practicar la recuperación supera a volver a estudiar con un efecto de g ≈ 0,51: un efecto mediano, consistente, a favor de dejar de mirar la respuesta y empezar a producirla.",
-          "La práctica distribuida tampoco es un truco de un solo estudio. Cepeda et al. (2006) reunieron 254 estudios y la conclusión fue clara: espaciar supera a concentrar. Y el detalle fino importa: según Cepeda et al. (2008), el intervalo óptimo entre sesiones crece con el plazo que tienes hasta el examen, con una regla práctica de usar entre el 10 % y el 20 % de ese plazo como separación. Si tu examen es en 30 días, hablamos de repasos separados por unos 3 a 6 días, no de repasos la noche anterior.",
+          "La práctica distribuida tampoco es un truco de un solo estudio. Cepeda et al. (2006) reunieron 839 evaluaciones de 317 experimentos y la conclusión fue clara: espaciar supera a concentrar. Y el detalle fino importa: según Cepeda et al. (2008), el intervalo óptimo entre sesiones crece con el plazo que tienes hasta el examen, con una regla práctica de usar entre el 10 % y el 20 % de ese plazo como separación. Si tu examen es en 30 días, hablamos de repasos separados por unos 3 a 6 días, no de repasos la noche anterior.",
           "El amarillo también tiene cifras, y son honestas. El intercalado muestra un efecto de g = 0,42 según Brunmair & Richter (2019), y la autoexplicación llega a g = 0,55 según Bisra et al. (2018). Son efectos reales, de pequeños a medianos, pero dependen más del material y del momento: intercalar antes de entender lo básico puede confundir más que ayudar. Por eso están en amarillo y no en verde: funcionan, con condiciones."
         ]
       },
@@ -520,7 +520,7 @@ export const BOOK = [
         h: "La ciencia, con números",
         p: [
           "El metaanálisis de Brunmair y Richter (2019, Psychological Bulletin, 59 estudios) fijó el efecto del intercalado en g = 0.42 global, pero con una advertencia que este libro no esconde: depende del material. En categorías visuales como estilos de pintura, g = 0.67; en matemáticas, g = 0.34; en vocabulario simple, g = −0.39 — ahí gana la práctica bloqueada. Rohrer y Taylor (2007, 2010) encontraron efectos grandes en matemáticas cuando la prueba llegaba con retraso.",
-          "La regla que se deriva: primero bloquea para aprender el movimiento o el concepto básico; después intercala para aprender a elegir. Intercalar desde el minuto uno a un principiante sin andamiaje puede ser una dificultad no deseable, sino simplemente confusión (la advertencia de carga cognitiva de Kirschner, Sweller y Clark, 2006)."
+          "La regla que se deriva: primero bloquea para aprender el movimiento o el concepto básico; después intercala para aprender a elegir. Intercalar desde el minuto uno a un principiante sin andamiaje puede no ser una dificultad deseable, sino simplemente confusión (la advertencia de carga cognitiva de Kirschner, Sweller y Clark, 2006)."
         ]
       }
     ],
@@ -543,7 +543,7 @@ export const BOOK = [
     tag: "Recuperación",
     title: "El lugar también recuerda",
     subtitle: "Contexto, estado y claves: la especificidad de la codificación",
-    hook: "Te ha pasado: en tu casa te sabías el tema perfecto, llegas al examen, miras la hoja y la respuesta se esconde. No la perdiste. La dejaste guardada con las claves de otro lugar.",
+    hook: "Te ha pasado: en tu casa te sabías el tema a la perfección, llegas al examen, miras la hoja y la respuesta se esconde. No la perdiste. La dejaste guardada con las claves de otro lugar.",
     paragraphs: [
       "Cada vez que aprendes algo, tu cerebro no guarda solo la información: guarda también el escenario. La habitación, los sonidos, tu estado de ánimo, incluso lo que tenías delante mientras estudiabas quedan cosidos al recuerdo como etiquetas invisibles. Cuando vuelves a un escenario parecido, esas etiquetas ayudan a tirar del hilo. Cuando el escenario cambia por completo, el hilo se afloja.",
       "Esto no es una metáfora bonita: es uno de los principios mejor documentados de la ciencia de la memoria, la especificidad de la codificación, formulado por Tulving & Thomson (1973). Entenderlo te da dos poderes prácticos: dejar de depender de un solo lugar para recordar, y aprender a reconstruir mentalmente el contexto cuando el lugar real no se puede repetir.",
@@ -621,7 +621,7 @@ export const BOOK = [
       {
         h: "La ciencia, con números",
         p: [
-          "El mecanismo tiene nombre y circuito: la amígdala basolateral modula la consolidación en otras regiones mediante noradrenalina y cortisol (McGaugh, 2004, Annual Review of Neuroscience). Por eso lo emocional se graba con prioridad. Pero la grabación es selectiva: la memoria emocional conserva fuerte el centro (el gist) y débil la periferia — la «memoria túnel» que el metaanálisis de Steblay (1992) documentó en el efecto de foco en el arma: se recuerda el arma y se pierde la cara.",
+          "El mecanismo tiene nombre y circuito: la amígdala basolateral modula la consolidación en otras regiones mediante noradrenalina y cortisol (McGaugh, 2004, Annual Review of Neuroscience). Por eso lo emocional se graba con prioridad. Pero la grabación es selectiva: la memoria emocional conserva fuerte el centro (el gist) y débil la periferia — el efecto que el metaanálisis de Steblay (1992) documentó como foco en el arma (weapon focus): se recuerda el arma y se pierde la cara.",
           "Implicación práctica: la emoción es una palanca de codificación, no una garantía de exactitud. Úsala para anclar lo importante — una historia, una consecuencia real, una apuesta personal — y verifica con recuperación y fuentes lo que la emoción te hizo sentir indudable."
         ]
       }
@@ -653,7 +653,7 @@ export const BOOK = [
       {
         h: "El Palacio de la Memoria",
         p: [
-          "Hace más de dos mil años, los grandes oradores griegos debían memorizar discursos completos. Creían imágenes mentales y las colocaban en lugares familiares de su imaginación —en la puerta, la primera idea; en la sala, la segunda; en la cocina, la tercera. Al hablar, simplemente recorrían mentalmente la casa. Esta técnica, el Método de los Loci, sigue siendo usada hoy por campeones de memoria."
+          "Hace más de dos mil años, los grandes oradores griegos debían memorizar discursos completos. Creaban imágenes mentales y las colocaban en lugares familiares de su imaginación —en la puerta, la primera idea; en la sala, la segunda; en la cocina, la tercera. Al hablar, simplemente recorrían mentalmente la casa. Esta técnica, el Método de los Loci, sigue siendo usada hoy por campeones de memoria."
         ]
       },
       {
@@ -707,7 +707,7 @@ export const BOOK = [
         h: "La ciencia, con números",
         p: [
           "Durante el sueño de ondas lentas (NREM), el cerebro acopla tres ritmos — oscilaciones lentas corticales, husos del sueño y ripples del hipocampo — para transferir lo aprendido del hipocampo a la neocorteza (Rasch & Born, 2013, Physiological Reviews). El REM parece integrar más lo emocional y procedimental; el modelo útil es secuencial, no de compartimentos estancos.",
-          "Privarte de sueño cobra en dos direcciones: Lim y Dinges (2010) estimaron el daño de la privación total sobre la atención en d ≈ −0.9 a −1.0, y Newbury y colaboradores (2021) encontraron que dormir mal después de aprender perjudica la memoria declarativa (g ≈ 0.22) y la procedimental (g ≈ 0.45). Las siestas ayudan poco pero ayudan (efecto cognitivo global 0.25, Dutheil et al., 2021): 10–20 minutos para alerta, 60–90 para incluir sueño profundo y REM, aceptando la inercia al despertar. Ningún ciclo de «90 minutos exactos» es una ley: la regularidad del horario predice mejor que la aritmética de fases."
+          "Privarte de sueño cobra en dos direcciones: Lim y Dinges (2010) estimaron el daño de la privación total sobre la atención en d ≈ −0.9 a −1.0, y Newbury y colaboradores (2021), en su metaanálisis de la privación de sueño, encontraron que dormir mal después de aprender perjudica la memoria declarativa (recuerdo g ≈ 0.21; reconocimiento g ≈ 0.18) y la procedimental (g ≈ 0.45). Las siestas ayudan poco pero ayudan (efecto cognitivo global 0.25, Dutheil et al., 2021), aunque en ese metaanálisis la duración no resultó decisiva; las franjas clásicas —10–20 minutos para alerta, 60–90 para incluir sueño profundo y REM, aceptando la inercia al despertar— vienen de Brooks y Lack (2006) y de Milner y Cote (2009). Ningún ciclo de «90 minutos exactos» es una ley: la regularidad del horario predice mejor que la aritmética de fases."
         ]
       }
     ],
@@ -811,7 +811,7 @@ export const BOOK = [
       {
         h: "Cafeína y alcohol: el préstamo y el borrón",
         p: [
-          "La cafeína no crea energía ni recuerdos: bloquea los receptores de adenosina, la señal química que acumula presión de sueño durante el día (el modelo de dos procesos de Borbély). Por eso te sientes despierto sin estar descansado: la deuda sigue ahí y se cobra cuando la cafeína se metaboliza. Usada con cabeza, es una herramienta legítima de alerta; usada tarde, destruye la consolidación nocturna: Drake y colaboradores (2013) mostraron que 400 mg de cafeína tomados incluso 6 horas antes de acostarse restan más de una hora de sueño. La regla práctica de este libro: cafeína por la mañana, corte al menos 8–9 horas antes de dormir, y nunca como sustituto del sueño que tu memoria necesita esa misma noche.",
+          "La cafeína no crea energía ni recuerdos: bloquea los receptores de adenosina, la señal química que acumula presión de sueño durante el día (el modelo de dos procesos de Borbély). Por eso te sientes despierto sin estar descansado: la deuda sigue ahí y se cobra cuando la cafeína se metaboliza. Usada con cabeza, es una herramienta legítima de alerta; usada tarde, destruye la consolidación nocturna: Drake y colaboradores (2013) mostraron que 400 mg de cafeína tomados incluso 6 horas antes de acostarse restan más de una hora de sueño medido objetivamente (en el diario subjetivo la pérdida fue menor, unos 41 minutos). La regla práctica de este libro: cafeína por la mañana, corte al menos 8–9 horas antes de dormir, y nunca como sustituto del sueño que tu memoria necesita esa misma noche.",
           "El alcohol es el extremo opuesto y mucho más serio. Un «blackout» no es que olvides lo que pasó: es que nunca se grabó. White (2003, revisión del NIAAA) lo explica a nivel de mecanismo: el alcohol bloquea los receptores NMDA y la potenciación a largo plazo en el hipocampo, así que la codificación se apaga mientras la persona sigue consciente y conversando. Todo lo que «aprendiste» o viviste en ese estado falta porque jamás entró. Y no hace falta llegar al blackout para pagar: Topiwala y colaboradores (2022, BMJ) asociaron incluso el consumo moderado con mayor hierro cerebral y peor cognición en análisis observacionales y de aleatorización mendeliana. Si mañana tienes un examen, una negociación o un día de aprendizaje importante, la noche anterior sin alcohol no es moralismo: es protección directa del hipocampo."
         ]
       },
@@ -914,7 +914,7 @@ export const BOOK = [
     subtitle: "Las personas más inteligentes no tienen todas las respuestas. Tienen mejores preguntas",
     hook: "La calidad de tu aprendizaje nunca será superior a la calidad de tus preguntas.",
     paragraphs: [
-      "Cuenta una anécdota que, al terminar una conferencia, un niño preguntó a Einstein cómo sabía qué preguntas hacerse. Él respondió algo cercano a esto: si tuviera una hora para resolver un problema del que dependiera su vida, dedicaría cincuenta y cinco minutos a entender la pregunta y solo cinco a buscar la respuesta. Aunque la anécdota probablemente sea una adaptación, transmite una idea poderosa: las grandes soluciones nacen de grandes preguntas."
+      "Una anécdota cuenta que, al terminar una conferencia, un niño preguntó a Einstein cómo sabía qué preguntas hacerse. Él respondió algo cercano a esto: si tuviera una hora para resolver un problema del que dependiera su vida, dedicaría cincuenta y cinco minutos a entender la pregunta y solo cinco a buscar la respuesta. Aunque la anécdota probablemente sea una adaptación, transmite una idea poderosa: las grandes soluciones nacen de grandes preguntas."
     ],
     sections: [
       {
@@ -991,7 +991,7 @@ export const BOOK = [
     subtitle: "Por qué saber mucho no significa ser mejor... y cómo convertir las ideas en transformación",
     hook: "Una idea que nunca aplicas no es conocimiento. Es información almacenada.",
     paragraphs: [
-      "Imagina una biblioteca inmensa donde nadie entra jamás, nadie abre un solo libro. ¿Qué valor tiene? Prácticamente ninguno. Ahora piensa en tu propia mente: ¿cuántos libros has leído, cuántos cursos terminado, y cuántas de esas ideas cambiaron realmente tu manera de vivir? Ver un video sobre ejercicio no fortalece tus músculos. La transformación comienza cuando actúas."
+      "Imagina una biblioteca inmensa donde nadie entra jamás, nadie abre un solo libro. ¿Qué valor tiene? Prácticamente ninguno. Ahora piensa en tu propia mente: ¿cuántos libros has leído, cuántos cursos has terminado, y cuántas de esas ideas cambiaron realmente tu manera de vivir? Ver un video sobre ejercicio no fortalece tus músculos. La transformación comienza cuando actúas."
     ],
     sections: [
       {
@@ -1035,7 +1035,7 @@ export const BOOK = [
       {
         h: "El Método Feynman",
         p: [
-          "El físico Richard Feynman tenía una regla sencilla: si no podía explicar una idea con palabras simples, asumía que todavía no la entendía por completo. Su método tiene cuatro pasos: elige un concepto, explícalo con palabras sencillas, detecta dónde te atoras, y regresa a estudiar solo esas partes antes de volver a explicarlas."
+          "El físico Richard Feynman tenía una regla sencilla: si no podía explicar una idea con palabras simples, asumía que todavía no la entendía por completo. Su método tiene cuatro pasos: elige un concepto, explícalo con palabras sencillas, detecta dónde te atoras y regresa a estudiar solo esas partes antes de volver a explicarlas."
         ]
       },
       {
@@ -1128,14 +1128,14 @@ export const BOOK = [
       {
         h: "La memoria fotográfica que casi nadie tiene",
         p: [
-          "Vamos al mito más seductor: la memoria fotográfica, esa capacidad de mirar una página y «leerla» después desde una foto mental perfecta. Lo que la investigación encontró es otra cosa. Haber (1979) revisó el fenómeno de la imagen eidética, una especie de eco visual que persiste unos segundos o minutos tras mirar algo, y lo situó en apenas el 2–10% de los niños de 6 a 12 años; incluso en ellos es breve, borroso y desaparece, y en adultos es virtualmente inexistente. Nadie, en décadas de búsqueda, ha demostrado fotografiar páginas con la mente.",
+          "Vamos al mito más seductor: la memoria fotográfica, esa capacidad de mirar una página y «leerla» después desde una foto mental perfecta. Lo que la investigación encontró es otra cosa. Haber (1979) revisó el fenómeno de la imagen eidética, una especie de eco visual que persiste unos segundos o minutos tras mirar algo, y lo situó en apenas el 2–15% de los menores de 12 años; incluso en ellos es breve, borroso y desaparece, y en adultos es virtualmente inexistente. Nadie, en décadas de búsqueda, ha demostrado fotografiar páginas con la mente.",
           "No lo confundas con la HSAM, la memoria autobiográfica muy superior: un grupo reducidísimo de personas recuerda qué hizo casi cada día de su vida, con fechas y detalles personales. Es un fenómeno real, pero distinto: no «fotografían» textos ni listas, no rinden como cámaras en un examen y su don es autobiográfico, no un truco que puedas copiar. Si un curso te promete memoria fotográfica, te está vendiendo el nombre de algo que no existe para adultos."
         ]
       },
       {
         h: "Hipnosis: más confianza, no más verdad",
         p: [
-          "Último mito, y el más peligroso: usar la hipnosis para «recuperar» recuerdos perdidos, de la infancia o de un trauma. Kihlstrom (1997) lo dejó claro en su revisión: la hipnosis no es una llave del archivo mental. Lo que produce es una hipermnésia ilusoria: la persona «recuerda» más cosas, sí, pero entre ellas aparecen más recuerdos falsos, contados además con una confianza inflada.",
+          "Último mito, y el más peligroso: usar la hipnosis para «recuperar» recuerdos perdidos, de la infancia o de un trauma. Kihlstrom (1997) lo dejó claro en su revisión: la hipnosis no es una llave del archivo mental. Lo que produce es una hipermnesia ilusoria: la persona «recuerda» más cosas, sí, pero entre ellas aparecen más recuerdos falsos, contados además con una confianza inflada.",
           "Es la combinación perfecta para hacer daño: más material inventado y más seguridad al contarlo. Un recuerdo que sale bajo sugestión no viene con etiqueta de fábrica ni de inventado. Por eso la regla práctica de este capítulo es tajante: si alguien te ofrece hipnosis para recordar mejor o para recuperar tu pasado, tu memoria no gana nada y tu historia personal puede salir reescrita. Protege tus recuerdos de quien promete desenterrarlos."
         ]
       }
@@ -1215,7 +1215,7 @@ export const BOOK = [
       text: "La memoria se reconstruye, no se reproduce: entre el 25% del estudio del centro comercial (Loftus y Pickrell, 1995), el 30,4% del megaanálisis de Scoboria et al. (2017) y el 35% de la replicación de Murphy et al. (2023), los falsos recuerdos completos son comunes en gente normal. Confianza, viveza y detalle no certifican veracidad."
     },
     teaser: "Ya sabes que tu memoria se deja engañar. Toca la pregunta práctica: con todo este sistema en marcha, ¿cómo organizas tu vida entera alrededor de aprender mejor?",
-    closing: "Nada de esto te convierte en un testigo inútil ni en un mentiroso involuntario: te convierte en un adulto que sabe cómo funciona su instrumento. Tu memoria seguirá reconstruyendo, porque es lo que hace; la diferencia es que ahora tú lo sabes. Verifica lo importante, duda de lo demasiado perfecto y sé generoso cuando otro recuerde distinto que tú. A veces no hay un villano: hay dos reconstrucciones honestas del mismo día."
+    closing: "Nada de esto te convierte en un testigo inútil ni en un mentiroso involuntario: te convierte en un adulto que sabe cómo funciona su instrumento. Tu memoria seguirá reconstruyendo, porque es lo que hace; la diferencia es que ahora tú lo sabes. Verifica lo importante, duda de lo demasiado perfecto y sé generoso cuando otro recuerde distinto de ti. A veces no hay un villano: hay dos reconstrucciones honestas del mismo día."
   },
   {
     id: "ch-suplementos",
@@ -1235,14 +1235,14 @@ export const BOOK = [
         h: "La ciencia, con números",
         p: [
           "Empecemos por el clásico: el ginkgo biloba. El ensayo GEM (DeKosky et al., 2008), con n=3.069 adultos mayores seguidos durante años, no encontró prevención de la demencia: el resultado fue nulo, con un hazard ratio de 1.12, es decir, ni siquiera apuntaba en la dirección de proteger. El ensayo GuidAge, con n=2.854 participantes, llegó a la misma conclusión: nulo. No hablamos de estudios de veinte personas durante dos semanas. Hablamos de miles de personas y del resultado más importante que se podía medir. A eso súmale un riesgo documentado que el anuncio no menciona: el ginkgo puede aumentar el riesgo de hemorragia, un problema serio si tomas anticoagulantes o si te van a operar.",
-          "La creatina merece un matiz distinto, y por eso es interesante. El metaanálisis de Prokopidis et al. (2023) encontró un tamaño de efecto global sobre la memoria de SMD 0.29 a 0.31, que en la escala que usa este libro es un efecto pequeño. Pero el promedio esconde la historia: en personas de 66 a 76 años el efecto fue de 0.88, mientras que en adultos jóvenes fue de 0.03, prácticamente cero. Y la propia revisión califica la certeza de la evidencia como baja. Lectura honesta: hay una señal que estudiar en mayores, no una recomendación de este libro para nadie."
+          "La creatina merece un matiz distinto, y por eso es interesante. El metaanálisis de Prokopidis et al. (2023) encontró un tamaño de efecto global sobre la memoria de SMD 0.29, que en la escala que usa este libro es un efecto pequeño. Pero el promedio esconde la historia: en personas de 66 a 76 años el efecto fue de 0.88, mientras que en el subgrupo joven (de 11 a 31 años) fue de 0.03, prácticamente cero. Y la propia revisión califica la certeza de la evidencia como baja. Lectura honesta: hay una señal que estudiar en mayores, no una recomendación de este libro para nadie."
         ]
       },
       {
         h: "Señales pequeñas, estudios pequeños",
         p: [
           "La bacopa monnieri aparece en casi todas las listas de nootrópicos naturales. ¿Qué hay detrás? Una señal pequeña sobre la memoria que, cuando aparece, lo hace tras 8 a 12 semanas de uso, y que procede de ensayos pequeños. Ensayo pequeño significa pocas personas, poca duración y mucho margen para que el azar o el diseño expliquen el resultado. No es lo mismo una señal así que una prueba. Compárala con la práctica de recuperación, replicada en aulas reales.",
-          "El estudio COSMOS, un ensayo grande con multivitamínicos y con extracto de cacao, deja otra lección útil. El resultado primario del brazo de cacao fue nulo. Con el multivitamínico se observó un efecto pequeño sobre la cognición en adultos mayores. Pequeño, en mayores, y dentro de un ensayo concreto: eso es todo lo que se puede decir con honestidad. Convertirlo en titular milagroso es el salto del marketing, no de la ciencia. Un efecto pequeño en una población específica no es una promesa para ti."
+          "El estudio COSMOS, un ensayo grande con multivitamínicos y con extracto de cacao, deja otra lección útil. El resultado primario del brazo de cacao fue nulo. Con el multivitamínico (brazo COSMOS-Web, Yeung et al., 2023) se observó un efecto pequeño sobre la memoria en adultos mayores. Pequeño, en mayores, y dentro de un ensayo concreto: eso es todo lo que se puede decir con honestidad. Convertirlo en titular milagroso es el salto del marketing, no de la ciencia. Un efecto pequeño en una población específica no es una promesa para ti."
         ]
       },
       {
@@ -1421,7 +1421,7 @@ export const BOOK = [
       {
         h: "La ciencia, con números",
         p: [
-          "Tres cifras sostienen todo lo que sigue. Primera: la práctica de recuperación supera a reestudiar con un efecto de g=0.51 (Adesope et al., 2017); en el clásico de Roediger y Karpicke (2006), a la semana se recordaba el 61% recuperando frente al 40% releyendo. Segunda: espaciar funciona en 254 estudios (Cepeda et al., 2006), y el intervalo entre repasos debe rondar el 10-20% del plazo que falta hasta tu objetivo (Cepeda et al., 2008). Tercera: tu foco retiene unos 4 bloques a la vez (Cowan, 2001), así que todo se parte en grupos de 3 a 4. Y el método de loci, entrenado 6 semanas en el estudio de Dresler et al. (2017), mantenía sus beneficios 4 meses después: es tu herramienta para orden y discursos."
+          "Tres cifras sostienen todo lo que sigue. Primera: la práctica de recuperación supera a reestudiar con un efecto de g=0.51 (Adesope et al., 2017); en el clásico de Roediger y Karpicke (2006), a la semana se recordaba el 61% recuperando frente al 40% releyendo. Segunda: espaciar funciona en cientos de experimentos (839 evaluaciones, Cepeda et al., 2006), y el intervalo entre repasos debe rondar el 10-20% del plazo que falta hasta tu objetivo (Cepeda et al., 2008). Tercera: tu foco retiene unos 4 bloques a la vez (Cowan, 2001), así que todo se parte en grupos de 3 a 4. Y el método de loci, entrenado 6 semanas en el estudio de Dresler et al. (2017), mantenía sus beneficios 4 meses después: es tu herramienta para orden y discursos."
         ]
       },
       {
@@ -1526,7 +1526,7 @@ export const BOOK = [
           "Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T. & Rohrer, D. (2006). Distributed practice in verbal recall tasks: a review and quantitative synthesis. Psychological Bulletin, 132(3), 354–380. DOI: 10.1037/0033-2909.132.3.354.",
           "Cepeda, N. J., Vul, E., Rohrer, D., Wixted, J. T. & Pashler, H. (2008). Spacing effects in learning: a temporal ridgeline of optimal retention. Psychological Science, 19(11), 1095–1102. DOI: 10.1111/j.1467-9280.2008.02209.x.",
           "Brunmair, M. & Richter, T. (2019). Similarity matters: a meta-analysis of interleaved learning. Psychological Bulletin, 145(11), 1029–1052. DOI: 10.1037/bul0000209.",
-          "Bisra, K., Liu, Q., Nesbit, J. C., Salimi, F. & Winne, P. H. (2018). Inducing self-explanation: a meta-analysis of the self-explanation effect. Review of Educational Research, 88(6), 855–887 (64 estudios, g = 0.55).",
+          "Bisra, K., Liu, Q., Nesbit, J. C., Salimi, F. & Winne, P. H. (2018). Inducing self-explanation: a meta-analysis of the self-explanation effect. Educational Psychology Review, 30(3), 703–725 (64 estudios y 5.917 participantes, g = 0.55).",
           "Bertsch, S., Pesta, B. J., Wiscott, R. & McDaniel, M. A. (2007). The generation effect: a meta-analytic review. Memory & Cognition, 35(2), 201–210.",
           "Bjork, R. A. & Bjork, E. L. (2011). Making things hard on yourself, but in a good way: creating desirable difficulties to enhance learning. En Psychology and the Real World (pp. 56–64). Worth Publishers."
         ]
@@ -1564,8 +1564,8 @@ export const BOOK = [
           "Masento, N. A., Golightly, M., Field, D. T., Butler, L. T. & van Reekum, C. M. (2014). Effects of hydration status on cognitive performance and mood. British Journal of Nutrition, 111(10), 1841–1852.",
           "White, A. M. (2003). What happened? Alcohol, memory blackouts, and the brain. Alcohol Research & Health, 27(2), 186–196.",
           "Drake, C., Roehrs, T., Shambroom, J. & Roth, T. (2013). Caffeine effects on sleep taken 0, 3, or 6 hours before going to bed. Journal of Clinical Sleep Medicine, 9(11), 1195–1200.",
-          "Shields, G. S., Sazma, M. A. & Yonelinas, A. P. (2017). Metaanálisis de los efectos del estrés agudo sobre la memoria. Psychological Bulletin, 143(6), 636–675.",
-          "Moran, T. P. (2016). Anxiety and working memory capacity: a meta-analysis and narrative review. Journal of Experimental Psychology: General, 145(7), 831–850.",
+          "Shields, G. S., Sazma, M. A., McCullough, M. E. & Yonelinas, A. P. (2017). Metaanálisis de los efectos del estrés agudo sobre la memoria. Psychological Bulletin, 143(6), 636–675.",
+          "Ma, W. J., Husain, M. & Bays, P. M. (2014). Changing concepts of working memory. Nature Neuroscience, 17(3), 347–356.", "Moran, T. P. (2016). Anxiety and working memory capacity: a meta-analysis and narrative review. Journal of Experimental Psychology: General, 145(7), 831–850.",
           "McGaugh, J. L. (2004). The amygdala modulates the consolidation of memories of emotionally arousing experiences. Annual Review of Neuroscience, 27, 1–28.",
           "Ward, A. F., Duke, K., Gneezy, A. & Bos, M. W. (2017). Brain drain: the mere presence of one's own smartphone reduces available cognitive capacity. Journal of the Association for Consumer Research, 2(2), 140–154. DOI: 10.1086/691462."
         ]
@@ -1587,7 +1587,7 @@ export const BOOK = [
           "DeKosky, S. T. et al. (2008). Ginkgo biloba for prevention of dementia: a randomized controlled trial (GEM). JAMA, 300(19), 2253–2262.",
           "Vellas, B. et al. (2012). Long-term use of standardised Ginkgo biloba extract for the prevention of Alzheimer's disease (GuidAge). The Lancet Neurology, 11(10), 851–859.",
           "Prokopidis, K. et al. (2023). Effects of creatine supplementation on memory in healthy individuals: a systematic review and meta-analysis of randomized controlled trials. Nutrition Reviews.",
-          "Baker, L. D. et al. (2023). Ensayo COSMOS-Mind: multivitamínico y declive cognitivo en adultos mayores. Alzheimer's & Dementia. / Yeung, L.-K. et al. (2024). Metaanálisis de los subestudios COSMOS: beneficio pequeño del multivitamínico en cognición global y memoria episódica; el extracto de cacao tuvo resultado primario cognitivo nulo. American Journal of Clinical Nutrition."
+          "Baker, L. D. et al. (2023). Ensayo COSMOS-Mind (n = 2.262): el extracto de cacao tuvo resultado primario cognitivo nulo; el multivitamínico, un resultado secundario favorable. Alzheimer's & Dementia, 19(4), 1308–1319. / Yeung, L.-K. et al. (2023). Ensayo COSMOS-Web (n = 3.562): el multivitamínico mejoró el recuerdo inmediato frente a placebo. American Journal of Clinical Nutrition."
         ]
       }
     ],

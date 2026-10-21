@@ -152,6 +152,22 @@ check("SSR: la vista Entrenar renderiza (v4)",
   !trainError && /Practica lo que el libro predica/.test(trainHtml) && /Span de dígitos/.test(trainHtml) && /Recuerdo de una lista/.test(trainHtml),
   trainError ? String(trainError.message) : "");
 
+/* v5: diagramas en el lector y activos de las ediciones */
+let diagramHtml = "";
+let diagramError = null;
+try {
+  diagramHtml = renderToStaticMarkup(React.createElement(App, { initialView: "reader", initialChapter: 8 }));
+} catch (err) {
+  diagramError = err;
+}
+check("SSR: el capítulo 5 renderiza su diagrama de la curva del olvido (v5)",
+  !diagramError && /La curva del olvido, y cómo se dobla/.test(diagramHtml),
+  diagramError ? String(diagramError.message) : "");
+check("v5: existen la portada y las ediciones descargables",
+  existsSync(new URL("../portada.png", import.meta.url)) &&
+  existsSync(new URL("../portada-mini.jpg", import.meta.url)) &&
+  existsSync(new URL("../ediciones/Expande-Tu-Mente.epub", import.meta.url)));
+
 /* ---------------------------------------------------- 3. bundle real en jsdom */
 
 const errors = [];

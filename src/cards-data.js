@@ -47,7 +47,7 @@ export const CARDS = [
  },
  {
   "f": "¿Qué encontró Ward et al. (2017) sobre tener el teléfono cerca al estudiar o trabajar?",
-  "b": "Con unas 800 personas, rendía mejor en memoria de trabajo e inteligencia fluida quien tenía el teléfono en otra habitación que quien lo tenía en el bolso o sobre la mesa, en silencio. Metaanálisis posteriores ven el efecto menor e inconsistente, pero sacar el teléfono de la habitación cuesta cero.",
+  "b": "Con más de 500 personas en el primer experimento (unos 800 sumando los dos), rendía mejor en memoria de trabajo e inteligencia fluida quien tenía el teléfono en otra habitación que quien lo tenía en el bolso o sobre la mesa, en silencio. Metaanálisis posteriores ven el efecto menor e inconsistente, pero sacar el teléfono de la habitación cuesta cero.",
   "t": "Atención"
  },
  {
@@ -77,12 +77,12 @@ export const CARDS = [
  },
  {
   "f": "¿Qué encontró Cepeda et al. (2006) sobre la práctica espaciada frente a la concentrada?",
-  "b": "En una síntesis de 254 estudios con más de 14,000 participantes, la práctica espaciada retuvo un 47% frente a un 37% de la práctica concentrada con el mismo tiempo total. Espaciar supera a concentrar: no es un truco de un solo estudio.",
+  "b": "En una síntesis de 839 evaluaciones de 317 experimentos, practicar con el mismo tiempo total pero espaciado retuvo claramente más que hacerlo concentrado (Cepeda et al., 2006, Psychological Bulletin). Espaciar supera a concentrar: no es un truco de un solo estudio.",
   "t": "Espaciado"
  },
  {
   "f": "¿Cuál es la regla del 10–20% para espaciar repasos y cómo se aplica?",
-  "b": "El intervalo óptimo entre repasos ronda el 10–20% del plazo que falta hasta tu objetivo (Cepeda et al., 2008). Para retener un mes, repasa cada 3–6 días; para retener un año, cada 1–2 meses. El intervalo crece con el plazo.",
+  "b": "El intervalo óptimo entre repasos ronda el 10–20% del plazo que falta hasta tu objetivo (Cepeda et al., 2008). Para retener un mes, repasa cada 3–6 días; para retener un año, cada 1–2 meses. Matiz verificado: en plazos muy largos la proporción óptima baja (hacia el 5–10% a un año). El intervalo crece con el plazo.",
   "t": "Espaciado"
  },
  {
@@ -142,7 +142,7 @@ export const CARDS = [
  },
  {
   "f": "¿Cuánto daña la privación de sueño a la atención y a la memoria, y cómo ayuda una siesta?",
-  "b": "La privación total daña la atención con d ≈ −0.9 a −1.0 (Lim y Dinges, 2010), y dormir mal después de aprender perjudica la memoria declarativa (g ≈ 0.22) y la procedimental (g ≈ 0.45) (Newbury et al., 2021). Las siestas ayudan poco pero ayudan: 10–20 minutos para alerta, 60–90 para incluir sueño profundo y REM.",
+  "b": "La privación total daña la atención con d ≈ −0.9 a −1.0 (Lim y Dinges, 2010), y dormir mal después de aprender perjudica la memoria declarativa (recuerdo g ≈ 0.21; reconocimiento g ≈ 0.18) y la procedimental (g ≈ 0.45) (Newbury et al., 2021). Las siestas ayudan poco pero ayudan: 10–20 minutos para alerta, 60–90 para incluir sueño profundo y REM (franjas clásicas de Brooks y Lack, 2006).",
   "t": "Sueño"
  },
  {
@@ -207,7 +207,7 @@ export const CARDS = [
  },
  {
   "f": "¿Existe la memoria fotográfica en adultos, según Haber (1979)?",
-  "b": "La memoria eidética aparece en un 2–10% de los niños, dura segundos o minutos y es virtualmente inexistente en adultos; ni siquiera garantiza mejor memoria medida. Debe distinguirse de la hipermemoria autobiográfica (HSAM), rara y también falible, y de la mnemotecnia entrenada, que sí funciona pero es estrategia, no fotografía.",
+  "b": "La memoria eidética aparece en un 2–15% de los menores de 12 años, dura segundos o minutos y es virtualmente inexistente en adultos; ni siquiera garantiza mejor memoria medida. Debe distinguirse de la hipermemoria autobiográfica (HSAM), rara y también falible, y de la mnemotecnia entrenada, que sí funciona pero es estrategia, no fotografía.",
   "t": "Mitos"
  },
  {
@@ -227,7 +227,7 @@ export const CARDS = [
  },
  {
   "f": "¿Qué señal hay sobre creatina y memoria, y por qué el libro no la recomienda?",
-  "b": "El metaanálisis de Prokopidis et al. (2023) halló un efecto global pequeño (SMD 0.29–0.31), concentrado en personas de 66–76 años (0.88) frente a prácticamente cero en jóvenes (0.03), y con certeza de la evidencia calificada como baja. Es una señal que estudiar en mayores, no una recomendación para nadie.",
+  "b": "El metaanálisis de Prokopidis et al. (2023) halló un efecto global pequeño (SMD 0.29), concentrado en personas de 66–76 años (0.88) frente a prácticamente cero en el subgrupo de 11 a 31 años (0.03), y con certeza de la evidencia calificada como baja. Es una señal que estudiar en mayores, no una recomendación para nadie.",
   "t": "Suplementos"
  },
  {
