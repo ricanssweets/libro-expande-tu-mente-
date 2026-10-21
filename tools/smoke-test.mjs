@@ -70,7 +70,7 @@ check("app.js: React incluido en el bundle", appJs.length > 80000, `${appJs.leng
 /* contenido estático + sitemap */
 const staticHtml = read("contenido.html");
 const sitemap = read("sitemap.xml");
-check("contenido.html: 15 anclas de capitulo", (staticHtml.match(/id="ch\d+"/g) || []).length === 15, String((staticHtml.match(/id="ch\d+"/g) || []).length));
+check("contenido.html: 30 secciones (intro + 27 capitulos + 2 apendices)", (staticHtml.match(/<section id=/g) || []).length === 30, String((staticHtml.match(/<section id=/g) || []).length));
 check("contenido.html: sin JavaScript", !/<script/i.test(staticHtml));
 check("contenido.html: accesibilidad basica", /<main /.test(staticHtml) && /aria-label="Contenido"/.test(staticHtml));
 check("sitemap.xml valido", /<urlset/.test(sitemap) && (sitemap.match(/<loc>/g) || []).length >= 2);
@@ -81,7 +81,7 @@ check("README y LICENSE presentes", existsSync(new URL("README.md", root)) && ex
 const bookData = read("src/book-data.js");
 check("book-data: acentos correctos", bookData.includes("Introducción") && bookData.includes("atención"));
 check("book-data: sin mojibake", !/Ã|Â|â€/.test(bookData));
-check("book-data: 15 capitulos + intro", (bookData.match(/id: "ch\d+"/g) || []).length === 15);
+check("book-data: 30 entradas (intro + 27 capitulos + 2 apendices)", (bookData.match(/id: "/g) || []).length === 30);
 
 /* ---------------------------------------------------- 2. render en servidor */
 
@@ -89,7 +89,7 @@ check("book-data: 15 capitulos + intro", (bookData.match(/id: "ch\d+"/g) || []).
 const ssrMod = await import(new URL("dist/app.ssr.cjs", root).href);
 const App = ssrMod.default?.default ?? ssrMod.default;
 const BOOK = ssrMod.BOOK;
-check("SSR: BOOK tiene 16 entradas (intro + 15)", Array.isArray(BOOK) && BOOK.length === 16, String(BOOK && BOOK.length));
+check("SSR: BOOK tiene 30 entradas (intro + 27 + 2 apendices)", Array.isArray(BOOK) && BOOK.length === 30, String(BOOK && BOOK.length));
 check("SSR: App es una función", typeof App === "function", typeof App);
 
 const React = (await import("react")).default;

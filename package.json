@@ -1,6 +1,6 @@
 {
   "name": "libro-expande-tu-mente",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "private": true,
   "description": "Expande Tu Mente — libro interactivo (PWA) sobre aprendizaje y memoria",
   "type": "module",
