@@ -323,7 +323,25 @@ export function HomeView({ T, onStart, onChapter, onTrain, chapterIdx, total, pr
         <a href="ediciones/Expande-Tu-Mente.epub" download style={{ color: T.gold, fontWeight: 700 }}>Descargar EPUB</a>
         <a href="ediciones/Expande-Tu-Mente.pdf" download style={{ color: T.gold, fontWeight: 700 }}>Descargar PDF (48 págs.)</a>
         <a href="ediciones/audio-introduccion.mp3" style={{ color: T.gold, fontWeight: 700 }}>Escuchar la introducción (4 min)</a>
-        <span>para tu lector de libros, para imprimir o para oír la muestra del audiolibro</span>
+        <span>para tu lector de libros o para imprimir</span>
+      </div>
+
+      <div style={{ marginTop: 30, border: `1px solid ${T.line}`, borderRadius: 12, padding: "18px 20px", background: T.bg2 }}>
+        <h2 style={{ fontFamily: SANS, fontWeight: 800, fontSize: 10, letterSpacing: "0.12em", textTransform: "uppercase", color: T.inkSoft, margin: "0 0 6px 0" }}>
+          Audiolibro
+        </h2>
+        <p style={{ fontFamily: SANS, fontSize: 12.5, color: T.inkSoft, margin: "0 0 8px 0", lineHeight: 1.6 }}>
+          El libro completo narrado, capítulo a capítulo. La bibliografía no se narra: es una lista de referencias para consultar.
+        </p>
+        {chapters.filter((c) => c.id !== "bibliografia").map((c) => (
+          <div key={c.id} style={{ display: "flex", alignItems: "center", gap: 12, padding: "8px 0", borderBottom: `1px dotted ${T.line}` }}>
+            <span aria-hidden="true" style={{ fontFamily: SERIF, fontWeight: 700, color: T.gold, width: 24, fontSize: 13 }}>
+              {c.num ? String(c.num).padStart(2, "0") : "—"}
+            </span>
+            <span style={{ fontFamily: SANS, fontSize: 13, flex: 1 }}>{c.title}</span>
+            <audio controls preload="none" src={`ediciones/audio/${String(c.idx + 1).padStart(2, "0")}-${c.id}.mp3`} aria-label={`Escuchar: ${c.title}`} style={{ height: 34, maxWidth: 230 }} />
+          </div>
+        ))}
       </div>
 
       <div style={{ marginTop: 44, borderTop: `1px solid ${T.line}`, paddingTop: 22 }}>
