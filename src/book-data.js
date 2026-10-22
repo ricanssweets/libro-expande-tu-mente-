@@ -9,6 +9,9 @@ export const BOOK = [
     title: "Tu memoria nunca estuvo rota",
     subtitle: "Solo nadie te enseñó a usarla.",
     paragraphs: [
+      "Siempre me llamó la atención una cosa: hay personas que recuerdan mucho y personas que recuerdan poco. Se acuerdan de nombres, de fechas, de cosas que pasaron hace años. Otras personas olvidan rápido, y yo me preguntaba por qué.",
+      "Me preguntaba si eso era de nacimiento. Si unos nacían con buena memoria y otros no. O si era algo que se podía aprender, como tantas otras cosas.",
+      "Busqué la respuesta por mucho tiempo, y este libro es lo que encontré: la memoria se puede entrenar. No es magia y no es un don raro. Es cuestión de método, y el método se aprende. De eso trata todo lo que sigue.",
       "Detente un momento e intenta responder, sin mirar el teléfono: ¿qué desayunaste hace exactamente siete días? ¿Cuál fue la última idea realmente importante que aprendiste en el último libro que leíste? Si te cuesta recordarlo, no significa que tengas mala memoria. Significa que tu cerebro está haciendo exactamente aquello para lo que fue diseñado: olvidar.",
       "El olvido no es un defecto; es una de las funciones más eficientes de la mente humana. Cada segundo recibes millones de estímulos: datos, conversaciones, anuncios, notificaciones y decisiones. Si conservaras absolutamente todo, colapsarías. Por eso tu cerebro selecciona qué conservar y qué dejar ir.",
       "El problema es que casi nadie nos enseñó cómo influir en esa decisión. Nos enseñaron qué estudiar, pero nunca cómo aprender. Y en el siglo XXI, esa diferencia cambia una vida entera."
@@ -1394,7 +1397,7 @@ export const BOOK = [
       ]
     },
     keyidea: "Nunca permití que mi curiosidad envejeciera antes que mi cuerpo — respuesta de un hombre de noventa años cuando le preguntaron el secreto de una vida plena.",
-    closing: "Si dentro de diez años olvidaras casi todo este libro, que conserves una sola idea: no importa tu edad, tu profesión ni cuántas veces hayas fracasado —tu cerebro puede seguir cambiando. Aprender no es un evento. Es una forma de vivir. Y cuando conviertes el aprendizaje en parte de tu identidad, no solo expandes tu memoria: expandes tu vida.",
+    closing: "Si dentro de diez años olvidaras casi todo este libro, que conserves una sola idea: no importa tu edad, tu profesión ni cuántas veces hayas fracasado —tu cerebro puede seguir cambiando. Aprender no es un evento. Es una forma de vivir. Y cuando conviertes el aprendizaje en parte de tu identidad, no solo expandes tu memoria: expandes tu vida. Y queda respondida la pregunta del principio, la que me hice por años: la buena memoria no es de nacimiento. Se aprende. Si practicaste lo que trae este libro, tu propia memoria ya te lo demostró.",
     sections: [
       {
         h: "El protocolo de 7, 30 y 90 días",

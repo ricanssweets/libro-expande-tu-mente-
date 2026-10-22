@@ -322,7 +322,7 @@ export function HomeView({ T, onStart, onChapter, onTrain, chapterIdx, total, pr
         <span style={{ fontWeight: 700, color: T.ink }}>Otras ediciones:</span>
         <a href="ediciones/Expande-Tu-Mente.epub" download style={{ color: T.gold, fontWeight: 700 }}>Descargar EPUB</a>
         <a href="ediciones/Expande-Tu-Mente.pdf" download style={{ color: T.gold, fontWeight: 700 }}>Descargar PDF (48 págs.)</a>
-        <a href="ediciones/audio-introduccion.mp3" style={{ color: T.gold, fontWeight: 700 }}>Escuchar la introducción (3 min)</a>
+        <a href="ediciones/audio-introduccion.mp3" style={{ color: T.gold, fontWeight: 700 }}>Escuchar la introducción (4 min)</a>
         <span>para tu lector de libros, para imprimir o para oír la muestra del audiolibro</span>
       </div>
 

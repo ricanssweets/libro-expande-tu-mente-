@@ -75,7 +75,7 @@ fecha en los archivos generados.
   diagramas (curva del olvido, semáforo de Dunlosky, memoria de trabajo, ciclos de sueño
   y línea de repasos) y el libro estrena portada diseñada (`portada.png`).
 - **Ediciones y ecosistema (v5).** EPUB con quizzes y respuestas (`npm run epub`) y PDF
-  de 48 páginas en `ediciones/`, muestra de audiolibro (la Introducción narrada, 3 min),
+  de 48 páginas en `ediciones/`, muestra de audiolibro (la Introducción narrada, 4 min),
   CSS de impresión en el lector y kit de lectores beta en `docs/lectores-beta.md`.
 - **Entrenamiento interactivo (v4).** Cada capítulo cierra con un quiz de 3 preguntas con
   explicación citada (`src/quiz-data.js`). La vista «Entrenar» incluye dos tests de memoria
