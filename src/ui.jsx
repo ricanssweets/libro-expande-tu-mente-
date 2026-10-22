@@ -319,7 +319,7 @@ export function HomeView({ T, onStart, onChapter, onTrain, chapterIdx, total, pr
       )}
 
       <div style={{ marginTop: 22, fontFamily: SANS, fontSize: 12.5, color: T.inkSoft, display: "flex", gap: 14, flexWrap: "wrap", alignItems: "center" }}>
-        <span style={{ fontWeight: 700, color: T.ink }}>Otras ediciones:</span>
+        <span style={{ fontWeight: 700, color: T.ink }}>Llévalo contigo:</span>
         <a href="ediciones/Expande-Tu-Mente.epub" download style={{ color: T.gold, fontWeight: 700 }}>Descargar EPUB</a>
         <a href="ediciones/Expande-Tu-Mente.pdf" download style={{ color: T.gold, fontWeight: 700 }}>Descargar PDF (48 págs.)</a>
         <a href="ediciones/audio-introduccion.mp3" style={{ color: T.gold, fontWeight: 700 }}>Escuchar la introducción (4 min)</a>
