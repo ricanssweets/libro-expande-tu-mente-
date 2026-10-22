@@ -59,3 +59,13 @@ img, svg { max-width: 100%; }
 .static-page nav.toc a:hover { text-decoration: underline; }
 .static-page .back { display: inline-block; margin-top: 2em; }
 .static-page footer { margin-top: 3em; border-top: 1px solid rgba(128,128,128,.35); padding-top: 1em; font-family: system-ui, sans-serif; font-size: .8rem; opacity: .75; }
+
+/* Impresión (v5): el lector puede imprimir el capítulo actual limpio,
+   sin navegación ni controles. */
+@media print {
+  header, footer, nav, button, a[href="#contenido"] { display: none !important; }
+  html, body { background: #fff !important; color: #000 !important; }
+  main { overflow: visible !important; }
+  article { max-width: 100% !important; padding: 0 !important; }
+  section, aside, figure { break-inside: avoid; }
+}

@@ -270,7 +270,13 @@ export function HomeView({ T, onStart, onChapter, onTrain, chapterIdx, total, pr
       <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: T.gold }}>
         Sistema Memoria Expandida™
       </div>
-      <h1 style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 42, lineHeight: 1.02, margin: "12px 0 0 0" }}>
+      <img
+        src="portada-mini.jpg"
+        alt="Portada del libro Expande Tu Mente: un cerebro-árbol dorado de ramas neuronales sobre fondo oscuro"
+        width={168} height={252}
+        style={{ display: "block", marginTop: 22, borderRadius: 8, boxShadow: "0 14px 34px rgba(0,0,0,0.35)", border: `1px solid ${T.line}` }}
+      />
+      <h1 style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 42, lineHeight: 1.02, margin: "20px 0 0 0" }}>
         Expande<br />Tu <span style={{ color: T.gold }}>Mente</span>
       </h1>
       <p style={{ fontFamily: SERIF, fontStyle: "italic", color: T.inkSoft, fontSize: 15, marginTop: 12 }}>
@@ -311,6 +317,14 @@ export function HomeView({ T, onStart, onChapter, onTrain, chapterIdx, total, pr
           </div>
         </div>
       )}
+
+      <div style={{ marginTop: 22, fontFamily: SANS, fontSize: 12.5, color: T.inkSoft, display: "flex", gap: 14, flexWrap: "wrap", alignItems: "center" }}>
+        <span style={{ fontWeight: 700, color: T.ink }}>Otras ediciones:</span>
+        <a href="ediciones/Expande-Tu-Mente.epub" download style={{ color: T.gold, fontWeight: 700 }}>Descargar EPUB</a>
+        <a href="ediciones/Expande-Tu-Mente.pdf" download style={{ color: T.gold, fontWeight: 700 }}>Descargar PDF (48 págs.)</a>
+        <a href="ediciones/audio-introduccion.mp3" style={{ color: T.gold, fontWeight: 700 }}>Escuchar la introducción (4 min)</a>
+        <span>para tu lector de libros, para imprimir o para oír la muestra del audiolibro</span>
+      </div>
 
       <div style={{ marginTop: 44, borderTop: `1px solid ${T.line}`, paddingTop: 22 }}>
         <h2 style={{ fontFamily: SANS, fontWeight: 800, fontSize: 10, letterSpacing: "0.12em", textTransform: "uppercase", color: T.inkSoft, margin: "0 0 12px 0" }}>

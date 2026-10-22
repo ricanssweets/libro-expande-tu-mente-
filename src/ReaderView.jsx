@@ -1,5 +1,6 @@
 import { SERIF, SANS, keyIdea } from "./theme.js";
 import QuizBlock from "./QuizBlock.jsx";
+import ChapterDiagram from "./Diagrams.jsx";
 
 /* Vista de lectura de un capítulo. Refina el diseño original manteniendo el contenido intacto. */
 export default function ReaderView({ chapter: c, T, fontSize, onCopyIdea, copied }) {
@@ -46,6 +47,8 @@ export default function ReaderView({ chapter: c, T, fontSize, onCopyIdea, copied
             ))}
           </ol>
         )}
+
+        <ChapterDiagram chapterId={c.id} T={T} />
 
         {c.exercise && (
           <aside style={{ border: `1.5px dashed ${T.gold}`, borderRadius: 10, padding: "16px 18px", margin: "20px 0", background: T.bg2 + "80" }}>

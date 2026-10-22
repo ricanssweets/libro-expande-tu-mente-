@@ -143,7 +143,7 @@ export const QUIZ = {
  ],
  "ch3": [
   {
-   "q": "En el estudio de Ward y colaboradores (2017) con unas 800 personas, ¿qué condición rindió mejor en memoria de trabajo e inteligencia fluida?",
+   "q": "En el estudio de Ward y colaboradores (2017) con más de 500 personas, ¿qué condición rindió mejor en memoria de trabajo e inteligencia fluida?",
    "options": [
     "Tener el teléfono sobre la mesa, boca abajo y en silencio",
     "Tener el teléfono en otra habitación",
@@ -151,7 +151,7 @@ export const QUIZ = {
     "Las tres condiciones rindieron exactamente igual"
    ],
    "answer": 1,
-   "why": "Ward et al. (2017, n ≈ 800) encontraron que tener el teléfono en otra habitación rindió mejor que en el bolso o sobre la mesa. Tu teléfono te cobra aunque no lo toques."
+   "why": "Ward et al. (2017; experimento 1, n = 520) encontraron que tener el teléfono en otra habitación rindió mejor que en el bolso o sobre la mesa. Tu teléfono te cobra aunque no lo toques."
   },
   {
    "q": "¿Qué dice el capítulo sobre la supuesta «multitarea» atencional?",
@@ -248,15 +248,15 @@ export const QUIZ = {
  ],
  "ch5": [
   {
-   "q": "En la síntesis de Cepeda y colaboradores (2006) de 254 estudios, ¿cuánto retuvo la práctica espaciada frente a la práctica concentrada en el mismo tiempo total?",
+   "q": "¿Qué reunió y qué concluyó la síntesis de Cepeda y colaboradores (2006) sobre la práctica espaciada?",
    "options": [
-    "Un 37% la espaciada frente a un 47% la concentrada",
-    "Un 47% la espaciada frente a un 37% la concentrada",
-    "Ambas retuvieron un 50% exacto",
-    "Un 90% la espaciada frente a un 10% la concentrada"
+    "839 evaluaciones de 317 experimentos: con el mismo tiempo total, espaciar retuvo claramente más que concentrar",
+    "Un solo experimento con 47 estudiantes que demostró que repasar no sirve de nada",
+    "Que la práctica concentrada rindió igual o mejor en todos los plazos estudiados",
+    "Solo estudios con niños pequeños, sin ningún dato en adultos"
    ],
-   "answer": 1,
-   "why": "Cepeda et al. (2006, Psychological Bulletin), con 254 estudios y más de 14,000 participantes: la práctica espaciada retuvo un 47% frente a un 37% de la concentrada, con el mismo tiempo total."
+   "answer": 0,
+   "why": "Cepeda et al. (2006, Psychological Bulletin) es la síntesis de referencia del efecto de espaciado: 839 evaluaciones de 317 experimentos, y la ventaja de distribuir la práctica es robusta en todos los plazos."
   },
   {
    "q": "Según Cepeda y colaboradores (2008), ¿cómo se calcula el intervalo óptimo entre repasos?",
@@ -403,7 +403,7 @@ export const QUIZ = {
    "options": [
     "Que las víctimas recuerdan mejor la cara del agresor que el arma",
     "Que la emoción mejora por igual el centro y la periferia del recuerdo",
-    "La «memoria túnel»: se recuerda el arma y se pierde la cara",
+    "El efecto de foco en el arma: se recuerda el arma y se pierde la cara",
     "Que la memoria emocional es siempre exacta y completa"
    ],
    "answer": 2,
@@ -474,21 +474,21 @@ export const QUIZ = {
     "Que no afecta a ningún tipo de memoria si estudiaste mucho",
     "Que mejora la memoria procedimental por efecto del cansancio",
     "Que solo perjudica la atención, nunca el recuerdo",
-    "Que perjudica la memoria declarativa (g ≈ 0.22) y la procedimental (g ≈ 0.45)"
+    "Que perjudica la memoria declarativa (recuerdo g ≈ 0.21; reconocimiento g ≈ 0.18) y la procedimental (g ≈ 0.45)"
    ],
    "answer": 3,
    "why": "Newbury et al. (2021) midieron ese doble coste; y Lim y Dinges (2010) estimaron el daño de la privación total sobre la atención en d ≈ −0.9 a −1.0."
   },
   {
-   "q": "¿Qué dice el capítulo sobre las siestas, según Dutheil y colaboradores (2021)?",
+   "q": "¿Qué encontró Dutheil y colaboradores (2021) sobre las siestas?",
    "options": [
-    "10–20 minutos para alerta y 60–90 para incluir sueño profundo y REM, aceptando la inercia al despertar",
-    "Toda siesta debe durar exactamente 90 minutos por ley fisiológica",
-    "Las siestas no tienen ningún efecto cognitivo medible",
-    "La mejor siesta es de 3 horas justo antes del examen"
+    "Un efecto cognitivo global pequeño (≈ 0.25), sin que la duración de la siesta resultara decisiva",
+    "Que toda siesta debe durar exactamente 90 minutos por ley fisiológica",
+    "Que las siestas no tienen ningún efecto cognitivo medible",
+    "Que la mejor siesta es de 3 horas justo antes del examen"
    ],
    "answer": 0,
-   "why": "Dutheil et al. (2021) estiman un efecto cognitivo global de 0.25: ayudan poco, pero ayudan; y el capítulo aclara que ningún ciclo de «90 minutos exactos» es una ley — la regularidad del horario predice mejor que la aritmética de fases."
+   "why": "Dutheil et al. (2021) estiman un efecto cognitivo global de ≈ 0.25: ayudan poco, pero ayudan; la duración no salió decisiva en su metaanálisis (las franjas de 10–20 y 60–90 minutos vienen de Brooks y Lack, 2006, y Milner y Cote, 2009). Y el capítulo aclara que ningún ciclo de «90 minutos exactos» es una ley — la regularidad del horario predice mejor que la aritmética de fases."
   }
  ],
  "ch-ejercicio": [
@@ -543,7 +543,7 @@ export const QUIZ = {
    "options": [
     "Ninguno: a las 6 horas la cafeína ya desapareció del cuerpo",
     "Mejora la consolidación porque llegas más cansado",
-    "Resta más de una hora de sueño; por eso el libro pide un corte 8–9 horas antes de dormir",
+    "Resta más de una hora de sueño medido objetivamente; por eso el libro pide un corte 8–9 horas antes de dormir",
     "Duplica el sueño profundo de esa noche"
    ],
    "answer": 2,
@@ -673,7 +673,7 @@ export const QUIZ = {
     "d = 0.40, en 86 estudios con 445 efectos",
     "d = 0.20, en 12 estudios con 60 efectos",
     "d = 0.80, en 200 estudios con 900 efectos",
-    "d = 0.93, en 254 estudios con 14.000 participantes"
+    "d = 0.93, en 300 estudios con 20.000 participantes"
    ],
    "answer": 0,
    "why": "El capítulo cita a Bertsch et al. (2007): recordar lo que tú mismo generas supera a lo que solo lees, con d = 0.40 en 86 estudios y 445 efectos. Producir es más fuerte que consumir."
@@ -800,10 +800,10 @@ export const QUIZ = {
     "Que la mitad de los adultos puede fotografiar una página y leerla después de memoria",
     "Que dura varias horas y mejora el rendimiento en los exámenes escolares",
     "Que es un don frecuente que los cursos pueden entrenar en pocas semanas",
-    "Que aparece en apenas el 2–10% de los niños de 6 a 12 años, dura segundos o minutos y en adultos es virtualmente inexistente"
+    "Que aparece en apenas el 2–15% de los menores de 12 años, dura segundos o minutos y en adultos es virtualmente inexistente"
    ],
    "answer": 3,
-   "why": "Haber (1979) situó la imagen eidética en el 2–10% de los niños de 6 a 12 años, breve y borrosa incluso en ellos. Nadie ha demostrado «fotografiar» páginas con la mente, y no hay que confundirla con la HSAM, que es autobiográfica."
+   "why": "Haber (1979) situó la imagen eidética en el 2–15% de los menores de 12 años, breve y borrosa incluso en ellos. Nadie ha demostrado «fotografiar» páginas con la mente, y no hay que confundirla con la HSAM, que es autobiográfica."
   }
  ],
  "ch-falsos": [
@@ -857,7 +857,7 @@ export const QUIZ = {
    "q": "¿Qué matiz importante trae el metaanálisis de creatina de Prokopidis y colaboradores (2023)?",
    "options": [
     "Que el efecto es enorme e igual en todas las edades",
-    "Que el efecto global es pequeño (SMD 0.29 a 0.31), fue de 0.88 en personas de 66 a 76 años pero de 0.03 en jóvenes, y la certeza de la evidencia es baja",
+    "Que el efecto global es pequeño (SMD 0.29), fue de 0.88 en personas de 66 a 76 años pero de 0.03 en el subgrupo de 11 a 31 años, y la certeza de la evidencia es baja",
     "Que la creatina no mostró ningún efecto en ningún grupo de edad",
     "Que el libro recomienda tomarla a diario para estudiar mejor"
    ],
