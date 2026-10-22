@@ -1,6 +1,6 @@
 # Expande Tu Mente
 
-Libro interactivo (PWA) sobre aprendizaje y memoria. **Edición expandida v3:** 27 capítulos y 2
+Libro interactivo (PWA) sobre aprendizaje y memoria: 27 capítulos y 2
 apéndices (protocolos rápidos y bibliografía verificada con DOI), con una sección
 «La ciencia, con números» en cada capítulo original y capítulos nuevos sobre memoria de
 trabajo, plasticidad, codificación, contexto, ejercicio, nutrición, estrés, mitos, falsos
@@ -69,7 +69,7 @@ fecha en los archivos generados.
   `contenido.html`, que contiene el libro entero como HTML.
 - **Progreso honesto.** Un capítulo cuenta como leído al superar el 85% de su scroll; el
   progreso y los marcadores se guardan en `localStorage` con manejo de errores.
-- **Edición verificada y visual (v5).** Todas las cifras pasaron una verificación contra
+- **Cifras verificadas y diseño.** Todas las cifras pasaron una verificación contra
   fuentes primarias (13 correcciones aplicadas y 1 dato retirado; detalle en
   `docs/verificacion-v5.md`) y una pasada de corrección de estilo. Cinco capítulos llevan
   diagramas (curva del olvido, semáforo de Dunlosky, memoria de trabajo, ciclos de sueño
@@ -77,7 +77,7 @@ fecha en los archivos generados.
 - **Ediciones y ecosistema (v5).** EPUB con quizzes y respuestas (`npm run epub`) y PDF
   de 48 páginas en `ediciones/`, muestra de audiolibro (la Introducción narrada, 4 min),
   CSS de impresión en el lector y kit de lectores beta en `docs/lectores-beta.md`.
-- **Entrenamiento interactivo (v4).** Cada capítulo cierra con un quiz de 3 preguntas con
+- **Entrenamiento interactivo.** Cada capítulo cierra con un quiz de 3 preguntas con
   explicación citada (`src/quiz-data.js`). La vista «Entrenar» incluye dos tests de memoria
   (span de dígitos y recuerdo de una lista de 15 palabras) con historial, y un mazo de 52
   flashcards con repetición espaciada tipo SM-2 (`src/cards-data.js`): las tarjetas vencidas

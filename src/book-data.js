@@ -1,4 +1,4 @@
-// Datos del libro — Edición expandida v3 (27 capítulos + 2 apéndices).
+// Datos del libro (27 capítulos + 2 apéndices).
 // Contenido: capítulos originales de la v2 con secciones «La ciencia, con números»
 // y capítulos nuevos con citas verificadas (ver apéndice de bibliografía).
 export const BOOK = [
@@ -19,9 +19,9 @@ export const BOOK = [
     pullquote: "El problema nunca fue mi capacidad; era mi método.",
     sections: [
       {
-        h: "Qué cambia en esta edición expandida",
+        h: "Qué trae este libro",
         p: [
-          "Esta es la tercera edición de Expande Tu Mente. La primera era un ensayo breve; la segunda lo convirtió en una aplicación de lectura. Esta edición hace lo que ninguna de las anteriores: muestra las pruebas. El libro crece de 15 a 27 capítulos, añade la neurociencia que faltaba (memoria de trabajo, plasticidad, codificación) y capítulos completos sobre ejercicio, nutrición, estrés, mitos, falsos recuerdos y suplementos sin humo, y cierra con protocolos paso a paso y una bibliografía verificada con DOI para que puedas comprobar cada número.",
+          "Expande Tu Mente muestra las pruebas, no solo las promesas. Son 27 capítulos y dos apéndices que cubren la memoria entera: la neurociencia que la explica (memoria de trabajo, plasticidad, codificación) y los temas de la vida real que la mueven — ejercicio, nutrición, sueño y estrés. También hay capítulos completos sobre mitos, falsos recuerdos y suplementos sin humo, y el libro cierra con protocolos paso a paso y una bibliografía verificada con DOI, para que puedas comprobar cada número por tu cuenta.",
           "Un aviso de honestidad que recorre todo el libro: la ciencia de la memoria es fuerte en unas cosas (recuperación, espaciado, sueño) y débil o nula en otras que se venden mucho (entrenadores cerebrales, la mayoría de nootrópicos). Aquí encontrarás ambas, etiquetadas. Expande tu mente empieza por saber qué no funciona."
         ]
       },
@@ -1514,7 +1514,7 @@ export const BOOK = [
     subtitle: "Las fuentes primarias y los metaanálisis detrás de cada afirmación de este libro",
     hook: "Un libro sobre memoria que no muestra sus fuentes te pide que te fíes. Este prefiere que lo compruebes.",
     paragraphs: [
-      "Todo número, tamaño de efecto y porcentaje citado en esta edición procede de una de las fuentes de esta lista: artículos revisados por pares, metaanálisis, revisiones sistemáticas y ensayos aleatorizados. Cuando la evidencia es mixta, preliminar o no se ha replicado, el capítulo correspondiente lo dice en el texto, junto a la cifra.",
+      "Todo número, tamaño de efecto y porcentaje citado en este libro procede de una de las fuentes de esta lista: artículos revisados por pares, metaanálisis, revisiones sistemáticas y ensayos aleatorizados. Cuando la evidencia es mixta, preliminar o no se ha replicado, el capítulo correspondiente lo dice en el texto, junto a la cifra.",
       "Cómo leer las referencias: «g» y «d» son tamaños de efecto (0.2 pequeño, 0.5 mediano, 0.8 grande). El DOI, cuando existe, es el enlace permanente del artículo: puedes pegarlo en doi.org para llegar a la fuente original."
     ],
     pullquote: "La confianza no se pide: se documenta.",
