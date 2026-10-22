@@ -163,6 +163,8 @@ try {
 check("SSR: el capítulo 5 renderiza su diagrama de la curva del olvido (v5)",
   !diagramError && /La curva del olvido, y cómo se dobla/.test(diagramHtml),
   diagramError ? String(diagramError.message) : "");
+check("SSR: el inicio incluye el audiolibro con el audio de la introducción",
+  /Audiolibro/.test(ssrHtml) && /ediciones\/audio\/01-intro\.mp3/.test(ssrHtml), "");
 check("v5: existen la portada y las ediciones descargables",
   existsSync(new URL("../portada.png", import.meta.url)) &&
   existsSync(new URL("../portada-mini.jpg", import.meta.url)) &&

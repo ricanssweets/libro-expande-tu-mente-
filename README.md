@@ -77,6 +77,10 @@ fecha en los archivos generados.
 - **Ediciones y ecosistema (v5).** EPUB con quizzes y respuestas (`npm run epub`) y PDF
   de 48 páginas en `ediciones/`, muestra de audiolibro (la Introducción narrada, 4 min),
   CSS de impresión en el lector y kit de lectores beta en `docs/lectores-beta.md`.
+- **Audiolibro completo.** Los 29 textos narrados con voz en español (unas 2,5 horas;
+  la bibliografía no se narra por ser una lista de referencias), un MP3 por capítulo
+  en `ediciones/audio/`, con reproductor en la página principal. Generador:
+  `node tools/build-audiobook.mjs` (reanudable).
 - **Entrenamiento interactivo.** Cada capítulo cierra con un quiz de 3 preguntas con
   explicación citada (`src/quiz-data.js`). La vista «Entrenar» incluye dos tests de memoria
   (span de dígitos y recuerdo de una lista de 15 palabras) con historial, y un mazo de 52
