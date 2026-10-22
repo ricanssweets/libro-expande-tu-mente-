@@ -113,7 +113,7 @@ def main():
 <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
 <dc:identifier id="bookid">urn:uuid:8f2c4d1e-expande-mente-v5</dc:identifier>
 <dc:title>Expande Tu Mente</dc:title>
-<dc:creator>Darwin Acevedo Sanchez</dc:creator>
+<dc:creator>Darwin Acevedo</dc:creator>
 <dc:language>es</dc:language>
 <dc:description>Sistema Memoria Expandida: aprende como realmente aprende tu cerebro. Edición expandida e interactiva: 27 capítulos y 2 apéndices con respaldo científico, ejercicios y quizzes.</dc:description>
 <meta property="dcterms:modified">2026-10-21T00:00:00Z</meta>
