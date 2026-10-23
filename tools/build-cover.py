@@ -22,6 +22,17 @@ GOLD = (201, 162, 39)
 
 img = Image.open(ART).convert("RGB").resize((W, H), Image.LANCZOS)
 
+# Velo en la franja del subtítulo: las ramas brillantes lo tapaban.
+band = Image.new("L", (1, H))
+for y in range(H):
+    if 480 <= y <= 730:
+        t = min((y - 480) / 60, 1.0, (730 - y) / 60)
+        band.putpixel((0, y), int(190 * max(0.0, t)))
+    else:
+        band.putpixel((0, y), 0)
+band = band.resize((W, H)).filter(ImageFilter.GaussianBlur(30))
+img = Image.composite(Image.new("RGB", (W, H), (6, 5, 4)), img, band)
+
 # Velo oscuro inferior para que el nombre del autor se lea sobre las raíces.
 veil = Image.new("L", (1, H))
 for y in range(H):
@@ -61,15 +72,23 @@ def fit_font(path, text, target_w, start):
 f_brand = ImageFont.truetype(SERIF, 40)
 centered("SISTEMA MEMORIA EXPANDIDA™", 148, f_brand, GOLD, tracking=10)
 
-# Título
-f_title = fit_font(SERIF_B, "EXPANDE", 1020, 190)
-centered("EXPANDE", 252, f_title, CREAM)
-centered("TU MENTE", 418, f_title, CREAM)
-d.line([(500, 592), (780, 592)], fill=GOLD, width=3)
+# Título (un poco más chico, a petición del autor, para que el subtítulo
+# caiga en la zona oscura antes de la copa del cerebro)
+f_title = fit_font(SERIF_B, "EXPANDE", 880, 175)
+centered("EXPANDE", 238, f_title, CREAM)
+centered("TU MENTE", 382, f_title, CREAM)
+d.line([(515, 540), (765, 540)], fill=GOLD, width=3)
 
-# Subtítulo
+# Subtítulo (con sombra suave para despegarlo de las ramas)
 f_sub = ImageFont.truetype(SERIF_I, 46)
-centered("Aprende como realmente aprende tu cerebro", 622, f_sub, CREAM_SOFT)
+sub_text = "Aprende como realmente aprende tu cerebro"
+sub_w = d.textlength(sub_text, font=f_sub)
+shadow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+ds = ImageDraw.Draw(shadow)
+ds.text(((W - sub_w) / 2 + 2, 570), sub_text, font=f_sub, fill=(0, 0, 0, 220))
+img.paste(Image.alpha_composite(img.convert("RGBA"), shadow.filter(ImageFilter.GaussianBlur(3))).convert("RGB"), (0, 0))
+d = ImageDraw.Draw(img)
+centered(sub_text, 568, f_sub, CREAM_SOFT)
 
 # Autor (solo nombre y primer apellido; sin línea de edición)
 f_author = ImageFont.truetype(SERIF, 47)
